@@ -1,5 +1,42 @@
+/* http://www.modularscale.com/?1&em&1.333&web&text */
+
 html, body {
     height: 100%;
+    margin: 0;
+    font-family: 'Cabin', sans-serif;
+    color: white;
+}
+
+a {
+    text-decoration: none; /* Remove default underlines for links */
+    color: white;
+}
+
+a:visited {
+    color: white;
+}
+
+h1 {
+    margin: 0;
+    font-size: 4.209em;
+}
+
+h2 {
+    margin: 0;
+    font-size: 3.157em;
+}
+
+h3 {
+    margin: 0;
+    font-size: 2.369em;
+}
+
+h4 {
+    margin: 0;
+    font-size: 1.777em;
+}
+
+p {
     margin: 0;
 }
 
@@ -8,25 +45,88 @@ html, body {
     height: 100%;
 }
 
-#home {
+/* Home Page */
+#title-panel {
+    height: 54%; /* Golden Ratio */
     display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-#side-panel {
-    height: 100%;
-    flex-grow: 1;
+#name {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.157em;
+    color: #1976D2;
 }
 
 #home-panel-wrapper {
-    height: 100%;
-    flex-grow: 4;
-}
-
-.home-panel-row {
-    display: flex;
-    height: 50%;
+    height: 46%; /* Golden Ratio */
 }
 
 .home-panel {
-    flex-grow: 1;
+    height: 25%;
+    width: 67%;
+    overflow: hidden;
+}
+
+.home-panel:hover {
+    opacity: 0.6;
+}
+
+.panel-title {
+    transition: transform 0.75s;
+    height: 100%;
+    font-size: 4vw;
+    /* To center text */
+    text-align: center;
+    display: table;
+    width: 100%;
+}
+
+.home-panel:hover .panel-title {
+    transform: translateY(-100%);
+}
+
+.panel-text {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+#web-panel {
+    position: relative;
+    background-color: #03A9F4;
+}
+
+#music-panel {
+    position: relative;
+    left: 11%;
+    background-color: #00BCD4;
+}
+
+#physics-panel {
+    position: relative;
+    left: 22%;
+    background-color: #009688;
+}
+
+#writing-panel {
+    position: relative;
+    left: 33%;
+    background-color: #607D8B;
+}
+
+@media only screen and (min-width: 800px) {
+    #name {
+        font-size: 5.61em;
+    }
+
+    .panel-title {
+        font-size: 3vw;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .panel-title {
+        font-size: 2vw;
+    }
 }
