@@ -205,6 +205,24 @@ p {
     height: 72%;
 }
 
+.page-body-row {
+    display: flex;
+    height: 50%;
+}
+
+.page-body-cell {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.showcase {
+    width: 80%;
+    height: 80%;
+    background-color: #E3F2FD;
+}
+
 @media only screen and (min-width: 800px) {
     .page-header-link {
         top: 0%;
@@ -227,11 +245,11 @@ p {
     background-color: #03A9F4;
 }
 
-#music-page {
+/* Music Page */
+#music-header-link {
+    background-color: #00BCD4;
 }
 
-#physics-page {
-}
-
-#writing-page {
+#music-footer {
+    background-color: #00BCD4;
 }
