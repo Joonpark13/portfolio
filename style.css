@@ -16,6 +16,20 @@ a:visited {
     color: white;
 }
 
+a.external {
+    color: #37474F;
+    text-decoration: underline;
+}
+
+a:visited.external {
+    color: #263238;
+}
+
+a.external:hover, a:visited.external:hover {
+    color: #1976D2;
+}
+
+
 h1 {
     margin: 0;
     font-size: 4.209em;
@@ -185,15 +199,15 @@ p {
     opacity: 0.6;
 }
 
-.material-icons, .fa {
+.nav-icon {
     padding: 0 5px;
 }
 
-.material-icons {
+.material-icons.nav-icon {
     font-size: 36px;
 }
 
-.fa { /* Font Awesome icons look a bit bigger than material icons */
+.fa.nav-icon { /* Font Awesome icons look a bit bigger than material icons */
     font-size: 32px;
 }
 
@@ -240,19 +254,83 @@ p {
 
 .page-body-cell {
     flex-grow: 1;
+    flex-basis: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
 .showcase {
-    width: 80%;
-    height: 80%;
-    border-bottom: 3px solid #1976D2;
+    border-bottom: 3px solid #1976d2;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .showcase:hover {
     background-color: #E3F2FD;
+    cursor: pointer;
+}
+
+.showcase-img {
+    width: 60%;
+    margin: 5% 0;
+}
+
+.showcase-title {
+    color: #1976d2;
+    margin: 5% 0;
+}
+
+.checkbox-hack {
+    display: none;
+}
+
+.dialog {
+    visibility: hidden;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox-hack:checked + .dialog {
+    visibility: visible;
+}
+
+.dialog-body {
+    background-color: white;
+    width: 90%;
+    height: 80%;
+}
+
+.dialog-close {
+    color: rgba(0, 0, 0, 0.54);
+}
+
+.dialog-close:hover {
+    cursor: pointer;
+}
+
+.showcase, .text-bubble-wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.text-bubble {
+    color: #37474F;
+    font-size: 0.75em;
+    line-height: 1.5em;
+    margin: 5%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -265,6 +343,32 @@ p {
         top: 0;
         width: 92%;
         height: 80%;
+    }
+
+    .showcase {
+        flex-direction: row;
+        justify-content: space-around;
+    }
+
+    .showcase-img {
+        width: 40%;
+        margin: 0 5%;
+    }
+
+    .showcase-title {
+        color: #1976d2;
+        margin: 0 5%;
+        font-size: 1.777em;
+    }
+
+    .text-bubble {
+        font-size: 1em; 
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    .text-bubble {
+        font-size: 1.333em; 
     }
 }
 

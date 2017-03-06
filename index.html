@@ -54,22 +54,22 @@
 
     <aside id="nav">
       <a class="nav-links" href="#">
-        <i class="material-icons">home</i>
+        <i class="material-icons nav-icon">home</i>
       </a>
       <a class="nav-links" href="#web-page">
-        <i class="fa fa-code" aria-hidden="true"></i>
+        <i class="fa fa-code nav-icon" aria-hidden="true"></i>
       </a>
       <a class="nav-links" href="#music-page">
-        <i class="fa fa-music" aria-hidden="true"></i>
+        <i class="fa fa-music nav-icon" aria-hidden="true"></i>
       </a>
       <a class="nav-links" href="#physics-page">
-        <i class="fa fa-flask" aria-hidden="true"></i>
+        <i class="fa fa-flask nav-icon" aria-hidden="true"></i>
       </a>
       <a class="nav-links" href="#writing-page">
-        <i class="fa fa-pencil" aria-hidden="true"></i>
+        <i class="fa fa-pencil nav-icon" aria-hidden="true"></i>
       </a>
       <a class="nav-links" href="#contact-page">
-        <i class="material-icons">mail</i>
+        <i class="material-icons nav-icon">mail</i>
       </a>
     </aside>
 
@@ -81,25 +81,61 @@
       <section class="page-body">
         <div class="page-body-row">
           <div class="page-body-cell"> 
-            <div class="showcase">
+            <label class="showcase" for="serif-nu">
+              <img class="showcase-img" src="images/SerifLogo.png">
+              <p class="showcase-title">Serif.nu</p>
+            </label>
 
-            </div>
+            <input id="serif-nu" class="checkbox-hack" type="checkbox">
+
+            <label class="dialog" for="serif-nu">
+              <div class="dialog-body">
+                <label for="serif-nu"><i class="material-icons dialog-close">close</i></label>
+              </div>
+            </label>
           </div>
-          <div class="page-body-cell"> 
-            <div class="showcase">
 
-            </div>
+          <div class="page-body-cell"> 
+            <label class="showcase" for="census-reporter">
+              <img class="showcase-img" src="images/CensusReporterLogo.png">
+              <p class="showcase-title">Census Reporter</p>
+            </label>
+
+            <input id="census-reporter" class="checkbox-hack" type="checkbox">
+
+            <label class="dialog" for="census-reporter">
+              <div class="dialog-body">
+                <label for="census-reporter"><i class="material-icons dialog-close">close</i></label>
+              </div>
+            </label>
           </div>
         </div>
+
         <div class="page-body-row">
           <div class="page-body-cell">
-            <div class="showcase">
+            <label class="showcase" for="joonpark-me">
+              <img class="showcase-img" src="images/JoonParkWordmark.png">
+              <p class="showcase-title">JoonPark.me</p>
+            </label>
 
-            </div>
+            <input id="joonpark-me" class="checkbox-hack" type="checkbox">
+
+            <label class="dialog" for="joonpark-me">
+              <div class="dialog-body">
+                <label for="joonpark-me"><i class="material-icons dialog-close">close</i></label>
+              </div>
+            </label>
           </div>
-          <div class="page-body-cell"> 
-            <div class="showcase">
 
+          <div class="page-body-cell"> 
+            <div class="text-bubble-wrapper">
+              <p class="text-bubble">
+                It's an exciting time to be a front-end developer!
+                I combine my love for design with a passion for always learning
+                and doing things the right way. I'm currently a fellow at the
+                <a class="external" href="http://knightlab.northwestern.edu/">
+                Northwestern University Knight Lab</a>.
+              </p>
             </div>
           </div>
         </div>
