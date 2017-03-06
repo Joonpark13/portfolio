@@ -168,6 +168,33 @@ p {
     top: 0;
     background-color: #1976D2;
     z-index: 2;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+.nav-links:hover {
+    opacity: 0.6;
+}
+
+.material-icons, .fa {
+    padding: 0 5px;
+}
+
+.material-icons {
+    font-size: 36px;
+}
+
+.fa { /* Font Awesome icons look a bit bigger than material icons */
+    font-size: 32px;
 }
 
 @media only screen and (min-width: 800px) {
@@ -175,6 +202,7 @@ p {
         width: 8%;
         height: 100%;
         left: 92%;
+        flex-direction: column;
     }
 }
 
@@ -220,6 +248,10 @@ p {
 .showcase {
     width: 80%;
     height: 80%;
+    border-bottom: 3px solid #1976D2;
+}
+
+.showcase:hover {
     background-color: #E3F2FD;
 }
 
