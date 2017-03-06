@@ -46,17 +46,33 @@ p {
 }
 
 /* Home Page */
-#title-panel {
+#home-page {
+    z-index: 3;
+}
+
+#title-panel-wrapper {
     height: 54%; /* Golden Ratio */
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.title-panel {
+    flex-grow: 1;
+    height: 100%;
+}
+
+#first-name {
+    background-color: #1976D2;
+    color: white;
+    text-align: right;
+}
+
+#last-name {
+    color: #1976D2;
 }
 
 #name {
     font-family: 'Pacifico', cursive;
     font-size: 3.157em;
-    color: #1976D2;
 }
 
 #home-panel-wrapper {
@@ -65,7 +81,6 @@ p {
 
 .home-panel {
     height: 25%;
-    width: 67%;
     overflow: hidden;
 }
 
@@ -93,26 +108,23 @@ p {
 }
 
 #web-panel {
-    position: relative;
     background-color: #03A9F4;
+    width: 66%;
 }
 
 #music-panel {
-    position: relative;
-    left: 11%;
     background-color: #00BCD4;
+    width: 77%;
 }
 
 #physics-panel {
-    position: relative;
-    left: 22%;
     background-color: #009688;
+    width: 88%;
 }
 
 #writing-panel {
-    position: relative;
-    left: 33%;
     background-color: #607D8B;
+    width: 100%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -129,4 +141,32 @@ p {
     .panel-title {
         font-size: 2vw;
     }
+}
+
+/* Nav Bar */
+#nav {
+    position: fixed;
+    width: 8%;
+    height: 100%;
+    top: 0;
+    left: 92%;
+    background-color: #1976D2;
+    z-index: 2;
+}
+
+/* Web Page */
+#web-page {
+    background-color: #03A9F4;
+}
+
+#music-page {
+    background-color: #00BCD4;
+}
+
+#physics-page {
+    background-color: #009688;
+}
+
+#writing-page {
+    background-color: #607D8B;
 }
