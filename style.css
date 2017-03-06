@@ -28,12 +28,24 @@ h2 {
 
 h3 {
     margin: 0;
-    font-size: 2.369em;
+    font-size: 1.777em;
+}
+
+@media only screen and (min-width: 600px) {
+    h3 {
+        font-size: 2.369em;
+    }
 }
 
 h4 {
     margin: 0;
-    font-size: 1.777em;
+    font-size: 1.333em;
+}
+
+@media only screen and (min-width: 600px) {
+    h4 {
+        font-size: 1.777em;
+    }
 }
 
 p {
@@ -43,10 +55,13 @@ p {
 .page {
     width: 100%;
     height: 100%;
+    position: relative;
 }
 
 /* Home Page */
 #home-page {
+    position: relative;
+    background-color: white;
     z-index: 3;
 }
 
@@ -148,16 +163,68 @@ p {
 /* Nav Bar */
 #nav {
     position: fixed;
-    width: 8%;
-    height: 100%;
+    width: 100%;
+    height: 8%;
     top: 0;
-    left: 92%;
     background-color: #1976D2;
     z-index: 2;
 }
 
+@media only screen and (min-width: 800px) {
+    #nav {
+        width: 8%;
+        height: 100%;
+        left: 92%;
+    }
+}
+
+/* Content Pages */
+.page-header-link {
+    display: block;
+    position: relative;
+    top: 8%;
+    left: 10%;
+    width: 90%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-footer {
+    position: absolute;
+    bottom: 0;
+    top: 90%;
+    height: 10%;
+    width: 85%;
+}
+
+.page-body {
+    position: relative;
+    top: 8%;
+    height: 72%;
+}
+
+@media only screen and (min-width: 800px) {
+    .page-header-link {
+        top: 0%;
+        width: 82%;
+    }
+
+    .page-body {
+        top: 0;
+        width: 92%;
+        height: 80%;
+    }
+}
+
 /* Web Page */
-#web-page {
+#web-header-link {
+    background-color: #03A9F4;
+}
+
+#web-footer {
+    background-color: #03A9F4;
 }
 
 #music-page {
