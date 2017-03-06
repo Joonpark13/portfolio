@@ -60,19 +60,20 @@ p {
     height: 100%;
 }
 
-#first-name {
+#first-name-wrapper {
     background-color: #1976D2;
     color: white;
     text-align: right;
 }
 
-#last-name {
+#last-name-wrapper {
     color: #1976D2;
 }
 
-#name {
+.name {
     font-family: 'Pacifico', cursive;
     font-size: 3.157em;
+    margin: 20vh 0.125em;
 }
 
 #home-panel-wrapper {
@@ -128,8 +129,9 @@ p {
 }
 
 @media only screen and (min-width: 800px) {
-    #name {
+    .name {
         font-size: 5.61em;
+        margin: 15vh 0.125em;
     }
 
     .panel-title {
@@ -156,17 +158,13 @@ p {
 
 /* Web Page */
 #web-page {
-    background-color: #03A9F4;
 }
 
 #music-page {
-    background-color: #00BCD4;
 }
 
 #physics-page {
-    background-color: #009688;
 }
 
 #writing-page {
-    background-color: #607D8B;
 }
