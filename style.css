@@ -61,6 +61,19 @@ p {
     margin: 0;
 }
 
+.bold {
+    font-weight: bold;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.indent {
+    position: relative;
+    left: 1.333em;
+}
+
 .page {
     width: 100%;
     height: 100%;
@@ -285,6 +298,22 @@ p {
     display: none;
 }
 
+.showcase, .text-bubble-wrapper {
+    width: 80%;
+    height: 80%;
+    display: flex;
+    align-items: center;
+}
+
+.text-bubble {
+    font-size: 0.75em;
+    line-height: 1.5em;
+}
+
+.text-bubble, .text-bubble a {
+    color: #37474F;
+}
+
 .dialog {
     visibility: hidden;
     background-color: rgba(0,0,0,0.4);
@@ -303,13 +332,14 @@ p {
     visibility: visible;
 }
 
-.dialog-body {
+.dialog-card {
     background-color: white;
     width: 90%;
     height: 80%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow: auto;
 }
 
 .dialog-header {
@@ -346,20 +376,29 @@ p {
     cursor: pointer;
 }
 
-.showcase, .text-bubble-wrapper {
-    width: 80%;
-    height: 80%;
+.dialog-body {
     display: flex;
+    flex-direction: column;
     align-items: center;
 }
 
-.text-bubble {
-    font-size: 0.75em;
-    line-height: 1.5em;
+.dialog-image {
+    width: 30%;
+    margin-top: 3%;
 }
 
-.text-bubble, .text-bubble a {
+.dialog-description, .dialog-description a,
+.dialog-info, .dialog-info a {
+    margin-top: 3%;
+    width: 90%;
     color: #37474F;
+}
+
+.dialog-info {
+    background-color: #E3F2FD;
+    padding: 2%;
+    line-height: 1.333em;
+    margin-bottom: 3%;
 }
 
 @media only screen and (min-width: 800px) {
@@ -405,6 +444,10 @@ p {
 
     .dialog-close-icon {
         font-size: 2.369em;
+    }
+
+    .dialog-body {
+        flex-direction: row;
     }
 }
 
