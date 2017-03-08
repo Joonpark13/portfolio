@@ -287,7 +287,7 @@ p {
 
 .dialog {
     visibility: hidden;
-    background-color: rgba(0,0,0,0.3);
+    background-color: rgba(0,0,0,0.4);
     position: fixed;
     top: 0;
     left: 0;
@@ -307,13 +307,42 @@ p {
     background-color: white;
     width: 90%;
     height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.dialog-close {
+.dialog-header {
+    width: 90%;
+    height: 10%;
+    border-bottom: 3px solid #1976d2;
+    text-align: center;
+    display: table;
+}
+
+.dialog-title {
+    color: #1976d2;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dialog-close-button {
+    position: absolute;
+    right: 10%;
+    top: 14%;
+}
+
+.dialog-close-icon {
+    font-size: 1.777em;
     color: rgba(0, 0, 0, 0.54);
+    transform: translateY(-50%);
 }
 
-.dialog-close:hover {
+.dialog-close-icon:hover {
+    background-color: rgba(0,0,0,0.15);
+}
+
+.dialog-close-icon:hover {
     cursor: pointer;
 }
 
@@ -372,6 +401,10 @@ p {
     .footer-text {
         font-size: 1.777em;
         padding-left: 5%;
+    }
+
+    .dialog-close-icon {
+        font-size: 2.369em;
     }
 }
 
