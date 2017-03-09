@@ -42,4 +42,23 @@ $(function() {
 
     document.addEventListener('touchstart', addTouchClass, false);
     document.addEventListener('mouseover', removeTouchClass, false);
+
+    // Highlight nav
+    // Adapated from http://codepen.io/clokey2k/pen/jgfFD?editors=0010
+    const pages = $('.page');
+
+    $(window).scroll(function() { // On user scroll
+        var currentScroll = $(this).scrollTop(); // Get the position of the user's current view
+        let currentPage;
+
+        pages.each(function() {
+            const pagePosition = $(this).offset().top;
+            // Find the current page
+            if (pagePosition - 1 < currentScroll) currentPage = $(this);
+        });
+
+        const id = currentPage.attr('id');
+        $('a').removeClass('nav-active');
+        $(`[href='#${id}']`).addClass('nav-active');
+    });
 });

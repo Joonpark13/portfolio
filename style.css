@@ -219,6 +219,10 @@ html.can-touch .nav-links:hover {
     opacity: 1;
 }
 
+a.nav-active {
+    color: black;
+}
+
 .nav-icon {
     padding: 0 5px;
 }
