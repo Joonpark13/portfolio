@@ -61,4 +61,13 @@ $(function() {
         $('a').removeClass('nav-active');
         $(`a.nav-links[href='#${id}']`).addClass('nav-active');
     });
+
+    // Disable scroll when dialog is open
+    $('.checkbox-hack').click(function() {
+        if (this.checked) {
+            $('body').addClass('dialog-open');
+        } else {
+            $('body').removeClass('dialog-open');
+        }
+    })
 });

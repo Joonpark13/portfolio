@@ -345,6 +345,11 @@ a.nav-active {
     visibility: visible;
 }
 
+/* To be applied to body by jQuery when dialog is open */
+.dialog-open {
+    overflow: hidden;
+}
+
 .dialog-card {
     background-color: white;
     width: 90%;
