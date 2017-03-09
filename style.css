@@ -489,8 +489,8 @@ p {
     }
 }
 
-/* About Page */
-#about-page {
+/* About and Contact Page */
+.conversational-page {
     color: #37474F;
     display: flex;
     flex-direction: column;
@@ -498,12 +498,16 @@ p {
     align-items: center;
 }
 
-.about-lines {
+.conversational-page a {
+    color: #37474F;
+}
+
+.conversation-lines {
     width: 90%;
     margin-top: 1.777em;
 }
 
-#northwestern-wordmark-wrapper {
+.wordmark-wrapper {
     width: 90%;
 }
 
@@ -512,7 +516,7 @@ p {
     width: 90%;
 }
 
-#line-below-northwestern {
+.line-below-image {
     margin-top: 0;
 }
 
@@ -579,4 +583,9 @@ p {
 #writing-page-body {
     display: flex;
     align-items: center;
+}
+
+/* Contact page */
+#twitter-logo {
+    width: 100px;
 }
