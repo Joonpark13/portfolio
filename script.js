@@ -48,7 +48,7 @@ $(function() {
     const pages = $('.page');
 
     $(window).scroll(function() { // On user scroll
-        var currentScroll = $(this).scrollTop(); // Get the position of the user's current view
+        const currentScroll = $(this).scrollTop(); // Get the position of the user's current view
         let currentPage;
 
         pages.each(function() {
@@ -60,6 +60,9 @@ $(function() {
         const id = currentPage.attr('id');
         $('a').removeClass('nav-active');
         $(`a.nav-links[href='#${id}']`).addClass('nav-active');
+
+        // Hide scroll down arrow after scrolling past home
+        if (currentScroll > 5) $('#scroll-down-wrapper').hide();
     });
 
     // Disable scroll when dialog is open
