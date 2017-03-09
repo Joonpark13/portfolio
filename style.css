@@ -489,6 +489,49 @@ p {
     }
 }
 
+/* About Page */
+#about-page {
+    color: #37474F;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.about-lines {
+    width: 90%;
+    margin-top: 1.777em;
+}
+
+#northwestern-wordmark-wrapper {
+    width: 90%;
+}
+
+#northwestern-wordmark {
+    margin: 5px 0;
+    width: 90%;
+}
+
+#line-below-northwestern {
+    margin-top: 0;
+}
+
+@media only screen and (min-width: 800px) {
+    #about-page {
+        width: 90%;
+    }
+
+    #northwestern-wordmark {
+        width: 50%;
+    }
+}
+
+@media only screen and (min-width: 1025px) {
+    #northwestern-wordmark {
+        width: 30%;
+    }
+}
+
 /* Web Page */
 #web-header-link {
     background-color: #03A9F4;
@@ -505,4 +548,35 @@ p {
 
 #music-footer {
     background-color: #00BCD4;
+}
+
+/* Physics Page */
+#physics-header-link {
+    background-color: #009688;
+}
+
+#physics-footer {
+    background-color: #009688;
+}
+
+#fermilab-image {
+    padding: 40px 0;
+}
+
+#ciera-image {
+    padding: 30px 0;
+}
+
+/* Writing Page */
+#writing-header-link {
+    background-color: #607D8B;
+}
+
+#writing-footer {
+    background-color: #607D8B;
+}
+
+#writing-page-body {
+    display: flex;
+    align-items: center;
 }

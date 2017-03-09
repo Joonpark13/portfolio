@@ -56,6 +56,9 @@
       <a class="nav-links" href="#">
         <i class="material-icons nav-icon">home</i>
       </a>
+      <a class="nav-links" href="#about-page">
+        <i class="material-icons nav-icon">face</i>
+      </a>
       <a class="nav-links" href="#web-page">
         <i class="fa fa-code nav-icon" aria-hidden="true"></i>
       </a>
@@ -72,6 +75,31 @@
         <i class="material-icons nav-icon">mail</i>
       </a>
     </aside>
+
+    <div id="about-page" class="page">
+      <h4 class="about-lines">
+        Hi.
+      </h4>
+      <h4 class="about-lines">
+        My name's Joon and I'm a student at
+      </h4>
+      <div id="northwestern-wordmark-wrapper">
+        <img id="northwestern-wordmark" src="images/NorthwesternWordmark.png">
+      </div>
+      <h4 id="line-below-northwestern" class="about-lines">
+        studying Computer Science, Physics, and Music Composition.
+      </h4>
+      <h4 class="about-lines">
+        Keep scrolling down to check out some of the things I do.
+      </h4>
+      <h4 class="about-lines">
+        In addition, I'm an avid ultimate player, and I love playing video games that tell
+        incredible stories. I'll also indulge in anything and everything sci-fi.
+      </h4>
+      <h4 class="about-lines">
+        Thanks for visiting!
+      </h4>
+    </div>
 
     <div id="web-page" class="page">
       <a id="web-header-link" class="page-header-link" href="#web-page">
@@ -207,7 +235,7 @@
 
                     <div class="dialog-info">
                       <p class="bold">Learning Focus:</p>
-                      <p class="indent">HTML5, CSS3</p>
+                      <p class="indent">HTML5, CSS3, Mobile-First Development</p>
                     </div>
                   </div>
                 </div>
@@ -370,9 +398,210 @@
     </div>
 
     <div id="physics-page" class="page">
+      <a id="physics-header-link" class="page-header-link" href="#physics-page">
+        <h3>I research physics.</h3>
+      </a>
+
+      <section class="page-body">
+        <div class="page-body-row">
+          <div class="page-body-cell"> 
+            <label class="showcase" for="fermilab">
+              <img id="fermilab-image" class="showcase-img" src="images/FermilabLogo.png">
+              <p class="showcase-title">Fermilab</p>
+            </label>
+
+            <input id="fermilab" class="checkbox-hack" type="checkbox">
+
+            <div class="dialog">
+              <div class="dialog-card">
+                <div class="dialog-header">
+                  <h3 class="dialog-title">Fermilab</h3>
+                  <label class="dialog-close-button" for="fermilab"><i class="material-icons dialog-close-icon">close</i></label>
+                </div>
+
+                <div class="dialog-body">
+                  <div class="dialog-image-wrapper">
+                    <img id="fermilab-image" class="dialog-image" src="images/FermilabLogo.png">
+                  </div>
+
+                  <div class="dialog-content">
+                    <div class="dialog-description">
+                      At the Fermilab Center for Particle Astrophysics, I analyzed instrument testing data for the Array Camera
+                      for Optical to Near-IR Spectrophotometry (ARCONS). ARCONS is the first ground-based instrument in the
+                      optical through near-IR wavelength range based on Microwave Kinetic Inductance Detectors.
+                    </div>
+
+                    <div class="dialog-info">
+                      <p class="bold">Tasks:</p>
+                      <p class="indent">Operate ARCONS ultra-low temperature refrigerator</p>
+                      <p class="indent">Test data collection using controlled photon source</p>
+                      <p class="indent">Data analysis using Python</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-body-cell"> 
+            <label class="showcase" for="ciera">
+              <img id="ciera-image" class="showcase-img" src="images/CIERALogo.png">
+              <p class="showcase-title">CIERA</p>
+            </label>
+
+            <input id="ciera" class="checkbox-hack" type="checkbox">
+
+            <div class="dialog">
+              <div class="dialog-card">
+                <div class="dialog-header">
+                  <h3 class="dialog-title">CIERA</h3>
+                  <label class="dialog-close-button" for="ciera"><i class="material-icons dialog-close-icon">close</i></label>
+                </div>
+
+                <div class="dialog-body">
+                  <div class="dialog-image-wrapper">
+                    <img id="ciera-image" class="dialog-image" src="images/CIERALogo.png">
+                  </div>
+
+                  <div class="dialog-content">
+                    <div class="dialog-description">
+                      At the <a class="external" href="http://ciera.northwestern.edu/">Center for Interdisciplinary
+                      Exploration and Research in Astrophysics</a> (CIERA), I am currently investigating the properties
+                      of neutron stars, especially those in binary star systems, as they relate to the possibility of
+                      a potential gravitational wave source.
+                    </div>
+
+                    <div class="dialog-info">
+                      <p class="bold">More Info Coming Soon</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="page-body-row">
+          <div class="page-body-cell">
+            <label class="showcase" for="cornell">
+              <img class="showcase-img" src="images/CornellLogo.png">
+              <p class="showcase-title">CLASSE</p>
+            </label>
+
+            <input id="cornell" class="checkbox-hack" type="checkbox">
+
+            <div class="dialog">
+              <div class="dialog-card">
+                <div class="dialog-header">
+                  <h3 class="dialog-title">CLASSE</h3>
+                  <label class="dialog-close-button" for="cornell"><i class="material-icons dialog-close-icon">close</i></label>
+                </div>
+
+                <div class="dialog-body">
+                  <div class="dialog-image-wrapper">
+                    <img class="dialog-image" src="images/CornellLogo.png">
+                  </div>
+
+                  <div class="dialog-content">
+                    <div class="dialog-description">
+                      At the <a class="external" href="https://www.classe.cornell.edu/">Cornell Laboratory
+                      for Accelerator-Based Sciences and Education</a> (CLASSE), I collaborated on a dark
+                      matter search proposal. This experiment, if funded, would use missing mass detection
+                      to probe the existence of "dark photons" through the use of the Cornell Electron
+                      Storage Ring.
+                    </div>
+
+                    <div class="dialog-info">
+                      <p class="bold">Tasks:</p>
+                      <p class="indent">Test Cesium Iodide scintillating crystals for suitability</p>
+                      <p class="indent">Arduino programming and circuit board maintenance for crystal testing</p>
+                      <p class="indent">Use of oscilloscope and singal generators for crystal testing</p>
+                      <p class="indent">Data analysis using Python</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-body-cell"> 
+            <div class="text-bubble-wrapper">
+              <p class="text-bubble">
+                As a physicist, I am interested in exploring high energy particle physics and astrophysics. I am
+                currently pursing a bachelor's degree in physics at Northwestern University and conducting
+                research at CIERA.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="physics-footer" class="page-footer">
+        <p class="footer-text">
+          Check out my <a class="external" href="files/ResumePhysics.pdf">Resume</a>.
+        </p>
+      </footer>
     </div>
     
     <div id="writing-page" class="page">
+      <a id="writing-header-link" class="page-header-link" href="#writing-page">
+        <h3>I write prose and poetry.</h3>
+      </a>
+
+      <section id="writing-page-body" class="page-body">
+        <div class="page-body-row">
+          <div class="page-body-cell">
+            <label class="showcase" for="medium">
+              <img class="showcase-img" src="images/MediumLogo.png">
+              <p class="showcase-title">Medium</p>
+            </label>
+
+            <input id="medium" class="checkbox-hack" type="checkbox">
+
+            <div class="dialog">
+              <div class="dialog-card">
+                <div class="dialog-header">
+                  <h3 class="dialog-title">Medium</h3>
+                  <label class="dialog-close-button" for="medium"><i class="material-icons dialog-close-icon">close</i></label>
+                </div>
+
+                <div class="dialog-body">
+                  <div class="dialog-image-wrapper">
+                    <img class="dialog-image" src="images/MediumLogo.png">
+                  </div>
+
+                  <div class="dialog-content">
+                    <div class="dialog-description">
+                      I've put most of my prose (both fiction and non-fiction) on
+                      <a class="external" href="https://medium.com/@joon.park13">Medium</a>,
+                      feel free to check it out!
+                      Poetry coming soon.
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="page-body-cell"> 
+            <div class="text-bubble-wrapper">
+              <p class="text-bubble">
+                As renowned poet Sarah Kay says, "I write to figure things out."
+                I mainly write short thought-pieces, mostly on my college experiences,
+                but I've also written fiction. I also write poetry to get through
+                tough times - I find that the spoken word community is one of the most
+                inspiring communities I've ever encountered.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer id="writing-footer" class="page-footer">
+        <p class="footer-text">
+          Check out my <a class="external" href="https://medium.com/@joon.park13">Medium profile</a>.
+        </p>
+      </footer>
     </div>
 
     <div id="contact-page" class="page">
