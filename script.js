@@ -59,6 +59,6 @@ $(function() {
 
         const id = currentPage.attr('id');
         $('a').removeClass('nav-active');
-        $(`[href='#${id}']`).addClass('nav-active');
+        $(`a.nav-links[href='#${id}']`).addClass('nav-active');
     });
 });
