@@ -24,7 +24,6 @@ a.external:hover, a:visited.external:hover {
     color: #1976D2;
 }
 
-
 h1 {
     margin: 0;
     font-size: 4.209em;
@@ -127,6 +126,10 @@ p {
     opacity: 0.6;
 }
 
+html.can-touch .home-panel:hover {
+    opacity: 1;
+}
+
 .panel-title {
     transition: transform 0.75s;
     height: 100%;
@@ -139,6 +142,10 @@ p {
 
 .home-panel:hover .panel-title {
     transform: translateY(-100%);
+}
+
+html.can-touch .home-panel:hover .panel-title {
+    transform: none;
 }
 
 .panel-text {
@@ -206,6 +213,10 @@ p {
 
 .nav-links:hover {
     opacity: 0.6;
+}
+
+html.can-touch .nav-links:hover {
+    opacity: 1;
 }
 
 .nav-icon {
@@ -371,9 +382,6 @@ p {
 
 .dialog-close-icon:hover {
     background-color: rgba(0,0,0,0.15);
-}
-
-.dialog-close-icon:hover {
     cursor: pointer;
 }
 
