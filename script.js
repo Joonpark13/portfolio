@@ -17,9 +17,9 @@ $(function() {
 
     // Disabling hover on touch devices
     // Adapted from http://www.javascriptkit.com/dhtmltutors/sticky-hover-issue-solutions.shtml
-    let isTouch = false;
-    let isTouchTimer;
-    let currentClass = ''; // 'can-touch' or ''
+    var isTouch = false;
+    var isTouchTimer;
+    var currentClass = ''; // 'can-touch' or ''
 
     function addTouchClass() {
         clearTimeout(isTouchTimer);
@@ -49,7 +49,7 @@ $(function() {
 
     $(window).scroll(function() { // On user scroll
         var currentScroll = $(this).scrollTop(); // Get the position of the user's current view
-        let currentPage;
+        var currentPage;
 
         pages.each(function() {
             const pagePosition = $(this).offset().top;
