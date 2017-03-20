@@ -259,11 +259,21 @@ a.nav-active {
 }
 
 .material-icons.nav-icon {
-    font-size: 36px;
+    font-size: 24px;
 }
 
 .fa.nav-icon { /* Font Awesome icons look a bit bigger than material icons */
-    font-size: 32px;
+    font-size: 22px;
+}
+
+@media only screen and (min-width: 370px) {
+    .material-icons.nav-icon {
+        font-size: 36px;
+    }
+
+    .fa.nav-icon { /* Font Awesome icons look a bit bigger than material icons */
+        font-size: 32px;
+    }
 }
 
 @media only screen and (min-width: 800px) {
@@ -363,7 +373,7 @@ a.nav-active {
 }
 
 .text-bubble {
-    font-size: 0.75em;
+    font-size: 0.657em;
     line-height: 1.5em;
 }
 
@@ -470,6 +480,12 @@ a.nav-active {
     width: 90%;
 }
 
+@media only screen and (min-width: 370px) {
+    .text-bubble {
+        font-size: 0.75em;
+    }
+}
+
 @media only screen and (min-width: 800px) {
     .page-header-link {
         top: 3%;
@@ -571,6 +587,7 @@ a.nav-active {
 }
 
 .conversation-lines {
+    font-size: 1em;
     width: 90%;
     margin-top: 1.777em;
 }
@@ -581,14 +598,44 @@ a.nav-active {
 
 #northwestern-wordmark {
     margin: 5px 0;
-    width: 90%;
+    width: 70%;
 }
 
 .line-below-image {
     margin-top: 0;
 }
 
+#twitter-logo {
+    width: 50px;
+}
+
+@media only screen and (min-width: 360px) {
+    .conversation-lines {
+        font-size: 1.333em;
+    }
+
+    #northwestern-wordmark {
+        margin: 5px 0;
+        width: 90%;
+    }
+
+    #twitter-logo {
+        width: 100px;
+    }
+
+}
+
+@media only screen and (min-width: 600px) {
+    #northwestern-wordmark {
+        width: 60%;
+    }
+}
+
 @media only screen and (min-width: 800px) {
+    .conversation-lines {
+        font-size: 1.777em;
+    }
+
     #about-page {
         width: 90%;
     }
@@ -658,12 +705,17 @@ a.nav-active {
     background-color: #607D8B;
 }
 
+#writing-header-title {
+    font-size: 1.333em;
+}
+
+@media only screen and (min-width: 370px) {
+    #writing-header-title {
+        font-size: 1.777em;
+    }
+}
+
 #writing-page-body {
     display: flex;
     align-items: center;
-}
-
-/* Contact page */
-#twitter-logo {
-    width: 100px;
 }
