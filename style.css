@@ -21,6 +21,7 @@ a.external {
 }
 
 a.external:hover, a:visited.external:hover {
+    cursor: pointer;
     color: #1976D2;
 }
 
