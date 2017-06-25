@@ -26,3 +26,21 @@ body {
     top: 50%;
     transform: translateY(-50%);
 }
+
+.logo:hover {
+    opacity: 0.6;
+}
+
+#twitter {
+    width: 128px;
+}
+
+#linkedin {
+    padding: 30px;
+    width: 98px;
+}
+
+#image-wrapper {
+    text-align: center;
+}
+
