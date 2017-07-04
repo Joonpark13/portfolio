@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin|Pacifico');
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: 'Cabin', sans-serif;
+}
+
+#root {
+  height: 100%;
+}
