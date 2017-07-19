@@ -1,4 +1,7 @@
 /* font scales: http://www.modularscale.com/?1&em&1.333&web&text */
+:root {
+    --icon-size: 64px;
+}
 
 html, body {
     height: 100%;
@@ -9,6 +12,11 @@ html, body {
 body {
     display: flex;
     justify-content: center;
+    align-items: center;
+}
+
+a {
+    color: inherit;
 }
 
 #name {
@@ -22,25 +30,32 @@ body {
 }
 
 .wrapper {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    padding: 20px;
+}
+
+.logo {
+    margin: 0 15px;
+    width: var(--icon-size);
 }
 
 .logo:hover {
     opacity: 0.6;
 }
 
-#twitter {
-    width: 128px;
-}
-
-#linkedin {
-    padding: 30px;
-    width: 98px;
-}
-
 #image-wrapper {
-    text-align: center;
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#email-icon {
+    font-size: var(--icon-size);
+}
+
+@media only screen and (min-width: 600px) {
+    :root {
+        --icon-size: 128px;
+    }
 }
 
