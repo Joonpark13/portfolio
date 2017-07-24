@@ -1,5 +1,23 @@
-#main-column {
-  max-width: 1000px;
-  margin: auto;
-  min-height: 100%;
+#title-page, #root {
+    height: 100%;
+    background-color: var(--cerulean-1);
+}
+
+#title-content {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+#name-line {
+    font-weight: normal;
+}
+
+.content-width-wrapper {
+    max-width: var(--content-width);
+    margin: auto;
+}
+
+.intro-text {
+    margin: 15px 0;
 }
