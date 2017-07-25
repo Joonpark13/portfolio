@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import IconButton from 'material-ui/IconButton';
 
 import StripeCard from './StripeCard.js';
 import ProjectDisplay from './ProjectDisplay';
@@ -57,12 +58,18 @@ class App extends Component {
         </div>
 
         <ContentPage title="Projects">
-            <ProjectDisplay title="Serif.nu" img={SerifScreenshot} />
-            <ProjectDisplay title="Census Reporter" img={CRScreenshot} />
-            <ProjectDisplay title="RightStudent & ASM" />
-            <ProjectDisplay title="Felx Fernandez-Penny PR" />
-            <ProjectDisplay title="Superhero Fueling" />
-            <ProjectDisplay title="JoonPark.me (v1)" />
+          <ProjectDisplay title="Serif.nu" img={SerifScreenshot} />
+          <ProjectDisplay title="Census Reporter" img={CRScreenshot} />
+          <ProjectDisplay title="RightStudent & ASM" />
+          <ProjectDisplay title="Superhero Fueling" />
+          <ProjectDisplay title="JoonPark.me (v1)" />
+          <ProjectDisplay title="Felx Fernandez-Penny PR" />
+        </ContentPage>
+
+        <ContentPage title="To-Do">
+          <p className="page-text">
+            I think a person's to-do list speaks volumes. In that spirit, here's mine!
+          </p>
         </ContentPage>
 
         <ContentPage title="Contact">
@@ -70,6 +77,24 @@ class App extends Component {
             Whether it's a job opportunity or a sci-fi book recommendation (I love those),
             I'm down to chat about anything!
           </p>
+
+          <div id="icons">
+            <IconButton>
+              <span className="fa fa-envelope"></span>
+            </IconButton>
+            <IconButton>
+              <span className="fa fa-linkedin"></span>
+            </IconButton>
+            <IconButton>
+              <span className="fa fa-github"></span>
+            </IconButton>
+            <IconButton>
+              <span className="fa fa-twitter"></span>
+            </IconButton>
+            <IconButton>
+              <span className="fa fa-medium"></span>
+            </IconButton>
+          </div>
         </ContentPage>
       </div>
     );

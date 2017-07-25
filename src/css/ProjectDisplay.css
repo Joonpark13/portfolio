@@ -1,9 +1,10 @@
 .project-display-card {
     position: relative;
-    margin: 20px 0;
-    width: 96%; /* Leave room for shadow */
     background-size: contain;
-    box-shadow: 6px 4px 3px gray;
+}
+
+.project-display-card:hover {
+    cursor: pointer;
 }
 
 .project-display-card-small {
@@ -23,4 +24,5 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
+    line-height: 1em;
 }

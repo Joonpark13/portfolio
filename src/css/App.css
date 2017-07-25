@@ -66,3 +66,8 @@
     background-color: white;
     padding: 10px 0;
 }
+
+#icons {
+    text-align: center;
+    color: var(--cerulean-40);
+}
