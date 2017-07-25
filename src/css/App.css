@@ -1,6 +1,22 @@
-#title-page, #root {
+#app {
+    height: 100%;
+}
+
+.page {
+    width: 100%;
+}
+
+#title-page {
     height: 100%;
     background-color: var(--cerulean-1);
+    z-index: -10; /* arbitary value below 0 */
+    position: fixed;
+}
+
+#placeholder-page {
+    height: 100%;
+    z-index: -20; /* arbitary value below -10 */
+    position: relative; /* required to make page go below fixed positioned title page */
 }
 
 #title-content {
@@ -13,11 +29,40 @@
     font-weight: normal;
 }
 
+#falling {
+    background-color: rgb(121, 102, 87); /* From rocks at bottom of image */
+    background-image: linear-gradient(
+        rgba(0,0,0,0.1),
+        rgba(0,0,0,0.99)
+    ), url('../images/falling.jpg');
+    background-size: 600px;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+#falling-placeholder {
+    height: 150px;
+}
+
 .content-width-wrapper {
     max-width: var(--content-width);
     margin: auto;
+    overflow: auto;
 }
 
 .intro-text {
     margin: 15px 0;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.page-text {
+    margin: 15px 0;
+}
+
+.content-page {
+    background-color: white;
+    padding: 10px 0;
 }

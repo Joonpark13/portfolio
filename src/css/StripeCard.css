@@ -5,12 +5,6 @@
 }
 
 .left-stripe-card,
-.center-stripe-card,
-.right-stripe-card {
-    border-bottom: 3px solid var(--cerulean-40);
-}
-
-.left-stripe-card,
 .right-stripe-card {
     flex-grow: 1;
 }

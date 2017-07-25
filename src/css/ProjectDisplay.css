@@ -1,0 +1,26 @@
+.project-display-card {
+    position: relative;
+    margin: 20px 0;
+    width: 96%; /* Leave room for shadow */
+    background-size: contain;
+    box-shadow: 6px 4px 3px gray;
+}
+
+.project-display-card-small {
+    height: 50px;
+}
+
+.project-display-placeholder-img {
+    width: 100%;
+    visibility: hidden;
+    /* The image is a placeholder for the size of the parent div */
+}
+
+.project-display-title {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+}
