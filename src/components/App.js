@@ -27,7 +27,7 @@ class App extends Component {
                 focused on beautiful design and fine-tuned user experiences.
               </p>
               <p className="intro-text">
-                I study physics, music composition, and computer science at Northwestern University.
+                I currently study physics, music composition, and computer science at Northwestern University.
               </p>
             </div>
           </div>

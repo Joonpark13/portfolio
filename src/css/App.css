@@ -86,3 +86,13 @@
 #contact-content {
     margin: 60px 0;
 }
+
+@media only screen and (min-width: 600px) {
+    #falling {
+        background-size: 900px;
+    }
+
+    #falling-placeholder {
+        height: 300px;
+    }
+}

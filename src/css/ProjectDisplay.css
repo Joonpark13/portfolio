@@ -5,7 +5,7 @@
 .project-display-container {
     position: relative;
     margin: 20px 0;
-    width: 98%; /* Leave room for shadow */
+    width: 100%;
     box-shadow: 5px 4px 3px var(--cool-gray-30);
     overflow: hidden;
     z-index: 10;
@@ -37,7 +37,6 @@
     transform: translate(-50%, -50%);
     text-align: center;
     color: white;
-    line-height: 1em;
 }
 
 .project-display-expanded-header {
@@ -95,4 +94,18 @@
     opacity: 0;
     max-height: 0;
     transition: max-height 0.25s;
+}
+
+@media only screen and (min-width: 600px) {
+    :root {
+        --large-card-height: 366px; /* Determined from picture ratio */
+    }
+
+    .project-display-title {
+        font-size: var(--typescale-2);
+    }
+
+    .project-display-title.small {
+        font-size: var(--typescale-3);
+    }
 }

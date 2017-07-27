@@ -41,6 +41,7 @@ class ProjectDisplay extends Component {
         const floorStyles = ['project-display-floor'];
         const containerStyles = ['project-display-container'];
         const cardStyles = ['project-display-card'];
+        const titleStyles = ['project-display-title'];
 
         if (this.props.large) {
             bgStyle = {
@@ -53,6 +54,7 @@ class ProjectDisplay extends Component {
             };
 
             cardStyles.push('small');
+            titleStyles.push('small');
         }
 
         if (this.state.open) {
@@ -75,9 +77,9 @@ class ProjectDisplay extends Component {
                             <div style={bgStyle} className={cardStyles.join(' ')}>
                             </div>
                             {this.props.large ?
-                                <h3 className='project-display-title'>{this.props.title}</h3>
+                                <h3 className={titleStyles.join(' ')}>{this.props.title}</h3>
                             :
-                                <h4 className='project-display-title'>{this.props.title}</h4>
+                                <h4 className={titleStyles.join(' ')}>{this.props.title}</h4>
                             }
                         </Ripple>
                     }
