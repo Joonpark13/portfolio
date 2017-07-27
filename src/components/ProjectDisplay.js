@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import IconButton from 'material-ui/IconButton';
 import CloseIcon from 'material-ui-icons/Close';
+import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 
 import Ripple from './Ripple.js';
 
@@ -12,7 +13,8 @@ class ProjectDisplay extends Component {
         super(props);
         
         this.state = {
-            open: false
+            open: false,
+            animationCounter: 0
         };
 
         this.handleOpen = this.handleOpen.bind(this);
@@ -26,6 +28,7 @@ class ProjectDisplay extends Component {
                 250
             );
         }
+        this.setState({ animationCounter: this.state.animationCounter + 1 });
     }
 
     handleClose() {
@@ -39,7 +42,7 @@ class ProjectDisplay extends Component {
         const containerStyles = ['project-display-container'];
         const cardStyles = ['project-display-card'];
 
-        if (this.props.img) {
+        if (this.props.large) {
             bgStyle = {
                 backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9)), url(${this.props.img})`
             };
@@ -70,13 +73,8 @@ class ProjectDisplay extends Component {
                     :
                         <Ripple>
                             <div style={bgStyle} className={cardStyles.join(' ')}>
-                                {this.props.img &&
-                                    <div>
-                                        <img className="project-display-placeholder-img" src={this.props.img} alt="placeholder" />
-                                    </div>
-                                }
                             </div>
-                            {this.props.img ?
+                            {this.props.large ?
                                 <h3 className='project-display-title'>{this.props.title}</h3>
                             :
                                 <h4 className='project-display-title'>{this.props.title}</h4>
@@ -84,11 +82,18 @@ class ProjectDisplay extends Component {
                         </Ripple>
                     }
                 </div>
-                {this.state.open &&
-                    <div className="project-display-expanded-content">
-                        <p>temp text here</p>
-                    </div>
-                }
+                <ReactCSSTransitionGroup
+                    transitionName="expand-content"
+                    transitionEnterTimeout={900}
+                    transitionLeaveTimeout={500}
+                >
+                    {this.state.open &&
+                        <div key={this.props.title + this.state.animationCounter}>
+                            <img className="project-display-content-img" src={this.props.img} alt="project screenshot" />
+                            {this.props.summary}
+                        </div>
+                    }
+                </ReactCSSTransitionGroup>
             </div>
         );
 

@@ -26,7 +26,7 @@ class App extends Component {
                 focused on beautiful design and fine-tuned user experiences.
               </p>
               <p className="intro-text">
-                I currently study physics, music composition, and computer science at Northwestern University.
+                I study physics, music composition, and computer science at Northwestern University.
               </p>
             </div>
           </div>
@@ -44,12 +44,12 @@ class App extends Component {
             <div id="falling-placeholder"></div>
 
             <p className="page-text">
-              My name's Joon Park, and I'm a web developer raised in Ithaca NY, 
-              currently living in the Chicagoland area. I'm finishing up my last year at Northwestern
-              University, where I study physics, music composition, and physics.
+              My name is Joon Park  and I'm a web developer raised in Ithaca NY.
+              I'm currently living in the Chicagoland area finishing up my last year at Northwestern
+              University, where I study physics, music composition, and computer science.
             </p>
             <p className="page-text">
-              Physics research is actually how I learned to code - but turns
+              Physics research is actually how I learned to code - but I found
               out I enjoy the design and problem solving of full stack development even more.
               As a young developer I'm excited to continue feeding my insatiable appetite for learning.
               Check out some of my past projects below!
@@ -58,18 +58,52 @@ class App extends Component {
         </div>
 
         <ContentPage title="Projects">
-          <ProjectDisplay title="Serif.nu" img={SerifScreenshot} />
-          <ProjectDisplay title="Census Reporter" img={CRScreenshot} />
+          <ProjectDisplay
+            title="Serif.nu"
+            img={SerifScreenshot}
+            large
+            summary={
+              <div>
+                <p className="project-summary-text">
+                  <a href="https://serif.nu">Serif.nu</a> is a course scheduling web app designed to
+                  help Northwestern students plan their class registration more easily and quickly.
+                  Motivated by frustrations in using Northwestern's own course registration system,
+                  this project served as my introduction to JavaScript and web development in general.
+                  The first version (created using <span className="bold">flask</span> and
+                  <span className="bold"> PostgreSQL</span>) was released Fall 2015, and a new version
+                  (rebuild from scratch using <span className="bold">React</span> and
+                  <span className="bold"> Node.js</span>) was released Winter 2017.
+                </p>
+                <p className="project-summary-text">
+                  Serif.nu served not only as my gateway into web development but also taught me about
+                  what it takes to turn an idea into a product under tight schedules and even skills
+                  such as how to market a product.
+                </p>
+                <p className="project-summary-text highlight">
+                  Serif.nu was the first place winner of the Northwestern IEEE Project Showcase.
+                </p>
+                <div className="project-summary-icons">
+                  <IconButton>
+                    <span className="fa fa-github"></span>
+                  </IconButton>
+                </div>
+              </div>
+            }
+          />
+          <ProjectDisplay
+            title="Census Reporter"
+            img={CRScreenshot}
+            large
+            summary={
+              <div>
+
+              </div>
+            }
+          />
           <ProjectDisplay title="RightStudent & ASM" />
           <ProjectDisplay title="Superhero Fueling" />
           <ProjectDisplay title="JoonPark.me (v1)" />
           <ProjectDisplay title="Felx Fernandez-Penny PR" />
-        </ContentPage>
-
-        <ContentPage title="To-Do">
-          <p className="page-text">
-            I think a person's to-do list speaks volumes. In that spirit, here's mine!
-          </p>
         </ContentPage>
 
         <ContentPage title="Contact">

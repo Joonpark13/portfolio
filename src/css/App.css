@@ -70,3 +70,15 @@
     text-align: center;
     color: var(--cerulean-40);
 }
+
+.project-summary-text {
+    margin: 15px;
+}
+
+.project-summary-text.highlight {
+    color: var(--cerulean-40);
+}
+
+.project-summary-icons {
+    text-align: center;
+}
