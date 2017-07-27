@@ -1,5 +1,6 @@
 import React from 'react';
 import Button from 'material-ui/Button';
+import PropTypes from 'prop-types';
 
 const Ripple = (props) => {
     // Negate unwanted button styles
@@ -18,10 +19,14 @@ const Ripple = (props) => {
     };
 
     return (
-        <Button style={style}>
+        <Button disableRipple={props.disabled} style={style}>
             {props.children}
         </Button>
     );
 };
 
 export default Ripple;
+
+Ripple.propTypes = {
+    disable: PropTypes.bool
+};

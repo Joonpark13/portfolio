@@ -1,46 +1,99 @@
-import React from 'react';
+import React, { Component } from 'react';
 import PropTypes from 'prop-types';
+import IconButton from 'material-ui/IconButton';
+import CloseIcon from 'material-ui-icons/Close';
 
 import Ripple from './Ripple.js';
 
 import '../css/ProjectDisplay.css';
 
-const ProjectDisplay = ({ title, img }) => {
-    let bgStyle = {};
-
-    const rippleStyle = {
-        margin: '20px 0',
-        width: '98%', // Leave room for shadow
-        boxShadow: '5px 4px 3px var(--cool-gray-30)'
-    };
-
-    if (img) {
-        bgStyle = {
-            backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9)), url(${img})`
+class ProjectDisplay extends Component {
+    constructor(props) {
+        super(props);
+        
+        this.state = {
+            open: false
         };
 
-        return (
-            <Ripple style={rippleStyle}>
-                <div style={bgStyle} className="project-display-card">
-                    <img className="project-display-placeholder-img" src={img} alt="placeholder" />
-                    <h3 className="project-display-title">{title}</h3>
-                </div>
-            </Ripple>
-        );
-    } else {
-        bgStyle = {
-            backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9))`
-        };
-
-        return (
-            <Ripple style={rippleStyle}>
-                <div style={bgStyle} className="project-display-card project-display-card-small">
-                    <h4 className="project-display-title">{title}</h4>
-                </div>
-            </Ripple>
-        );
+        this.handleOpen = this.handleOpen.bind(this);
+        this.handleClose = this.handleClose.bind(this);
     }
-};
+
+    handleOpen() {
+        if (!this.state.open) {
+            setTimeout(
+                () => this.setState({ open: true }),
+                250
+            );
+        }
+    }
+
+    handleClose() {
+        this.setState({ open: false });
+    }
+
+    render() {
+        let bgStyle = {};
+
+        const floorStyles = ['project-display-floor'];
+        const containerStyles = ['project-display-container'];
+        const cardStyles = ['project-display-card'];
+
+        if (this.props.img) {
+            bgStyle = {
+                backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9)), url(${this.props.img})`
+            };
+
+        } else {
+            bgStyle = {
+                backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9))`
+            };
+
+            cardStyles.push('small');
+        }
+
+        if (this.state.open) {
+            containerStyles.push('open');
+            floorStyles.push('open');
+        }
+
+        return (
+            <div className={floorStyles.join(' ')}>
+                <div onClick={this.handleOpen} className={containerStyles.join(' ')}>
+                    {this.state.open ?
+                        <div className="project-display-expanded-header">
+                            <h3 className='project-display-expanded-title'>{this.props.title}</h3>
+                            <IconButton onClick={this.handleClose} style={{ color: 'white' }}>
+                                <CloseIcon />
+                            </IconButton>
+                        </div>
+                    :
+                        <Ripple>
+                            <div style={bgStyle} className={cardStyles.join(' ')}>
+                                {this.props.img &&
+                                    <div>
+                                        <img className="project-display-placeholder-img" src={this.props.img} alt="placeholder" />
+                                    </div>
+                                }
+                            </div>
+                            {this.props.img ?
+                                <h3 className='project-display-title'>{this.props.title}</h3>
+                            :
+                                <h4 className='project-display-title'>{this.props.title}</h4>
+                            }
+                        </Ripple>
+                    }
+                </div>
+                {this.state.open &&
+                    <div className="project-display-expanded-content">
+                        <p>temp text here</p>
+                    </div>
+                }
+            </div>
+        );
+
+    }
+}
 
 export default ProjectDisplay;
 

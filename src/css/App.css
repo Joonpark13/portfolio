@@ -47,7 +47,6 @@
 .content-width-wrapper {
     max-width: var(--content-width);
     margin: auto;
-    overflow: auto;
 }
 
 .intro-text {
