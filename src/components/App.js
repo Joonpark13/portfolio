@@ -96,7 +96,26 @@ class App extends Component {
             large
             summary={
               <div>
-
+                <p className="project-summary-text">
+                  <a href="https://censusreporter.com">Census Reporter</a> aims to make the access of
+                  U.S. census data easier and simpler. This was my first experience diving into an
+                  established code base. Since joining the team, I've covered the full stack while
+                  implementing full-text search in the Census Reporter API, designing a search results
+                  page, generating sitemaps, and making data download files more human readable.
+                </p>
+                <p className="project-summary-text">
+                  Census Reporter is built using <span className="bold">Django</span>,
+                  <span className="bold"> flask</span>, and <span className="bold">PostgreSQL</span>.
+                </p>
+                <p className="project-summary-text">
+                  Through the Census Reporter project, I'm also affiliated with the Northwestern
+                  University <a href="https://knightlab.northwestern.edu/">Knight Lab</a>.
+                </p>
+                <div className="project-summary-icons">
+                  <IconButton>
+                    <span className="fa fa-github"></span>
+                  </IconButton>
+                </div>
               </div>
             }
           />
