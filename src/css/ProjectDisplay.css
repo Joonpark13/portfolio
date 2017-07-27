@@ -55,7 +55,7 @@
     position: relative;
     left: 0;
     width: 100%;
-    transition: left 0.2s, width 0.2s;
+    transition: left ease-in-out 0.2s, width ease-in-out 0.2s;
 }
 
 .project-display-floor.open {
@@ -79,7 +79,7 @@
 .expand-content-enter.expand-content-enter-active {
     max-height: 1000px; /* Arbitrarily large value */
     opacity: 1;
-    transition: max-height 0.25s 0.1s, opacity 0.2s 0.3s;
+    transition: max-height 0.25s ease-out 0.1s, opacity 0.2s ease-in-out 0.3s;
 }
 
 .expand-content-leave {
