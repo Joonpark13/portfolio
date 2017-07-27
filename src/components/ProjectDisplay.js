@@ -88,11 +88,11 @@ class ProjectDisplay extends Component {
                     transitionLeaveTimeout={250}
                 >
                     {this.state.open &&
-                        <div key={this.props.title + this.state.animationCounter}>
+                        <div key={this.props.title + this.state.animationCounter} className="project-display-expanded-content">
                             {this.props.img &&
                                 <img className="project-display-content-img" src={this.props.img} alt="project screenshot" />
                             }
-                            {this.props.summary}
+                            {this.props.children}
                         </div>
                     }
                 </ReactCSSTransitionGroup>
