@@ -73,3 +73,9 @@ a, a:visited {
     --content-width: 580px;
   }
 }
+
+@media only screen and (min-width: 1024px) {
+  :root {
+    --content-width: 860px;
+  }
+}

@@ -109,3 +109,42 @@
         font-size: var(--typescale-3);
     }
 }
+
+@media only screen and (min-width: 1024px) {
+    :root {
+        --large-card-height: 256px; /* Determined from picture ratio */
+    }
+
+    .project-display-floor {
+        width: 400px;
+        flex-basis: 400px;
+    }
+
+    .project-display-card {
+        background-size: 100%;
+    }
+
+    .project-display-floor {
+        transition: none;
+    }
+
+    .project-display-floor.open {
+        left: 0;
+        width: 100%;
+        margin-top: 15px;
+    }
+
+    .project-display-title {
+        width: 100%;
+    }
+
+    .project-display-container.open {
+        margin-top: 0;
+    }
+
+    .small-project-display {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+}

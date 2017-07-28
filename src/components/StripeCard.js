@@ -3,18 +3,18 @@ import PropTypes from 'prop-types';
 
 import '../css/StripeCard.css';
 
-const StripeCard = (props) => {
+const StripeCard = ({ stripeColor, children, ...rest }) => {
     let style = { borderBottom: '3px solid var(--cerulean-40)' };
-    if (props.stripeColor) {
-        style = { borderBottom: `3px solid ${props.stripeColor}` };
+    if (stripeColor) {
+        style = { borderBottom: `3px solid ${stripeColor}` };
     }
 
     return (
-        <div className="stripe-card-container">
+        <div {...rest} className="stripe-card-container">
             <div style={style} className="left-stripe-card"></div>
             <div className="stripe-card-spacer"></div>
             <div style={style} className="center-stripe-card">
-                {props.children}
+                {children}
             </div>
             <div className="stripe-card-spacer"></div>
             <div style={style} className="right-stripe-card"></div>

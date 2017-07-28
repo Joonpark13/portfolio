@@ -44,6 +44,10 @@
     height: 150px;
 }
 
+#about-stripecard-primary {
+    display: none;
+}
+
 .content-width-wrapper {
     max-width: var(--content-width);
     margin: auto;
@@ -87,6 +91,10 @@
     margin: 60px 0;
 }
 
+#about-img-large-screen {
+    display: none;
+}
+
 @media only screen and (min-width: 600px) {
     #falling {
         background-size: 900px;
@@ -94,5 +102,82 @@
 
     #falling-placeholder {
         height: 300px;
+    }
+}
+
+@media only screen and (min-width: 840px) {
+    #falling {
+        background-size: 1100px;
+    }
+
+    #falling-placeholder {
+        height: 340px;
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+    #falling {
+        background-image: linear-gradient(
+            rgba(0,0,0,0.1),
+            rgba(0,0,0,0.7)
+        ), url('../images/falling_large.jpg');
+        background-size: cover;
+    }
+
+    #falling-placeholder {
+        height: 400px;
+    }
+
+    .large-project-display {
+        display: flex;
+        justify-content: space-around;
+        margin: 30px auto;
+    }
+
+    .small-project-display {
+        margin: 30px auto;
+    }
+}
+
+@media only screen and (min-width: 1280px) {
+    #falling {
+        background-color: white;
+        background-image: none;
+        background-repeat: no-repeat;
+        color: black;
+    }
+
+    #falling-placeholder {
+        height: auto; /* default */
+        margin: 50px 15px;
+        width: 48%;
+    }
+
+    #about-stripecard-primary {
+        display: flex; /* stripecard-container default */
+    }
+
+    #about-stripecard-white {
+        display: none;
+    }
+
+    #about-content {
+        display: flex;
+        align-items: center;
+    }
+
+    #about-img-large-screen {
+        display: inline-block;
+        width: 500px;
+        clip-path: circle(180px at 205px 180px);
+    }
+
+    #about-text-wrapper {
+        margin: 15px;
+        line-height: 1.5em;
+    }
+
+    .project-summary-text {
+        line-height: 1.4em;
     }
 }

@@ -27,8 +27,8 @@ class ProjectDisplay extends Component {
                 () => this.setState({ open: true }),
                 250
             );
+            this.setState({ animationCounter: this.state.animationCounter + 1 });
         }
-        this.setState({ animationCounter: this.state.animationCounter + 1 });
     }
 
     handleClose() {
