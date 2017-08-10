@@ -17,6 +17,15 @@ const ContentPage = ({ title, children, ...rest }) => (
 
 export default ContentPage;
 
-ContentPage.PropTypes = {
+ContentPage.propTypes = {
   title: PropTypes.string,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
+
+ContentPage.defaultProps = {
+  title: '',
+  children: undefined,
 };

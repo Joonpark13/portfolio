@@ -62,8 +62,10 @@
 }
 
 .project-display-floor.open {
-    left: -10%;
-    width: 120%;
+    --diff: calc(100vw - var(--content-width));
+    --half: calc(var(--diff) / 2);
+    left: calc(-1 * var(--half));
+    width: 100vw;
     background-color: var(--cerulean-1);
 }
 

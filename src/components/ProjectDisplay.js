@@ -47,7 +47,6 @@ class ProjectDisplay extends Component {
       bgStyle = {
         backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9)), url(${this.props.img})`,
       };
-
     } else {
       bgStyle = {
         backgroundImage: 'linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9))',
@@ -112,9 +111,18 @@ class ProjectDisplay extends Component {
 
 export default ProjectDisplay;
 
-ProjectDisplay.PropTypes = {
+ProjectDisplay.propTypes = {
   title: PropTypes.string.isRequired,
-  mode: PropTypes.string,
   img: PropTypes.string,
   large: PropTypes.bool,
+  children: PropTypes.oneOfType([
+    PropTypes.arrayOf(PropTypes.node),
+    PropTypes.node,
+  ]),
+};
+
+ProjectDisplay.defaultProps = {
+  img: '',
+  large: false,
+  children: undefined,
 };
