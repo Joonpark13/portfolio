@@ -118,8 +118,7 @@
     }
 
     .project-display-floor {
-        width: 400px;
-        flex-basis: 400px;
+        flex-basis: 460px;
     }
 
     .project-display-card {
