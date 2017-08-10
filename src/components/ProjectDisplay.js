@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import IconButton from 'material-ui/IconButton';
 import CloseIcon from 'material-ui-icons/Close';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
+import withClickOutside from 'react-click-outside';
 
 import Ripple from './Ripple';
 
@@ -32,6 +33,10 @@ class ProjectDisplay extends Component {
   }
 
   handleClose() {
+    this.setState({ open: false });
+  }
+
+  handleClickOutside() {
     this.setState({ open: false });
   }
 
@@ -109,7 +114,7 @@ class ProjectDisplay extends Component {
   }
 }
 
-export default ProjectDisplay;
+export default withClickOutside(ProjectDisplay);
 
 ProjectDisplay.propTypes = {
   title: PropTypes.string.isRequired,
