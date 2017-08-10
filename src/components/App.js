@@ -187,7 +187,7 @@ const App = () => (
           I&apos;m down to chat about anything!
         </p>
 
-        <div id="icons">
+        <div id="sm" className="icons">
           <IconButton>
             <span className="fa fa-envelope"></span>
           </IconButton>
@@ -202,6 +202,24 @@ const App = () => (
           </IconButton>
           <IconButton>
             <span className="fa fa-medium"></span>
+          </IconButton>
+        </div>
+
+        <div id="lg" className="icons">
+          <IconButton className="contact-btn">
+            <span className="fa fa-envelope fa-lg"></span>
+          </IconButton>
+          <IconButton className="contact-btn">
+            <span className="fa fa-linkedin fa-lg"></span>
+          </IconButton>
+          <IconButton className="contact-btn">
+            <span className="fa fa-github fa-lg"></span>
+          </IconButton>
+          <IconButton className="contact-btn">
+            <span className="fa fa-twitter fa-lg"></span>
+          </IconButton>
+          <IconButton className="contact-btn">
+            <span className="fa fa-medium fa-lg"></span>
           </IconButton>
         </div>
       </div>

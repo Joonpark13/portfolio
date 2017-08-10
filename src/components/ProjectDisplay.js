@@ -50,11 +50,11 @@ class ProjectDisplay extends Component {
 
     if (this.props.large) {
       bgStyle = {
-        backgroundImage: `linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9)), url(${this.props.img})`,
+        backgroundImage: `linear-gradient(rgba(28, 73, 109,0.6), rgba(28, 73, 109,0.6)), url(${this.props.img})`, // Cerulean-70
       };
     } else {
       bgStyle = {
-        backgroundImage: 'linear-gradient(150deg, rgba(0,0,0,0.4), rgba(0,155,239,0.9))',
+        backgroundImage: 'linear-gradient(rgb(23, 93, 141), rgb(23, 93, 141))', // Cerulean-60
       };
 
       cardStyles.push('small');

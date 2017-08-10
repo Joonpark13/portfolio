@@ -6,7 +6,7 @@
     position: relative;
     margin: 20px 0;
     width: 100%;
-    box-shadow: 5px 4px 3px var(--cool-gray-30);
+    /* box-shadow: 5px 4px 3px var(--cool-gray-30); */
     overflow: hidden;
     z-index: 10;
 }
