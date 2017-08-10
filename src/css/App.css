@@ -80,7 +80,7 @@
 }
 
 .project-summary-text.highlight {
-    color: var(--cerulean-40);
+    font-weight: bold;
 }
 
 .project-summary-icons {
