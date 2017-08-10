@@ -3,22 +3,20 @@ import PropTypes from 'prop-types';
 
 import StripeCard from './StripeCard';
 
-const ContentPage = ({ title, children, ...rest }) => {
-    return (
-        <div {...rest} className="page content-page">
-            <StripeCard>
-                <h2>{title}</h2>
-            </StripeCard>
+const ContentPage = ({ title, children, ...rest }) => (
+  <div {...rest} className="page content-page">
+    <StripeCard>
+      <h2>{title}</h2>
+    </StripeCard>
 
-            <div className="content-width-wrapper">
-                {children}
-            </div>
-        </div>
-    );
-};
+    <div className="content-width-wrapper">
+      {children}
+    </div>
+  </div>
+);
 
 export default ContentPage;
 
 ContentPage.PropTypes = {
-    title: PropTypes.string
+  title: PropTypes.string,
 };
