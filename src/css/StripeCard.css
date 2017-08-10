@@ -4,11 +4,6 @@
     justify-content: center;
 }
 
-.left-stripe-card,
-.right-stripe-card {
-    flex-grow: 1;
-}
-
 .center-stripe-card {
     flex-basis: var(--content-width);
     padding: 5px 15px;
@@ -16,4 +11,11 @@
 
 .stripe-card-spacer {
     width: 15px;
+}
+
+@media only screen and (min-width: 600px) {
+    .left-stripe-card,
+    .right-stripe-card {
+        flex-grow: 1;
+    }
 }
