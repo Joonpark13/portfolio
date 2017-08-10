@@ -1,5 +1,6 @@
 import React from 'react';
 import IconButton from 'material-ui/IconButton';
+import ExpandButton from 'material-ui-icons/ExpandMore';
 
 import StripeCard from './StripeCard';
 import ProjectDisplay from './ProjectDisplay';
@@ -31,6 +32,8 @@ const App = () => (
           </p>
         </div>
       </div>
+
+      <IconButton id="scroll-prompt"><ExpandButton id="scroll-icon" /></IconButton>
     </div>
 
     {/* Placeholder  */}
