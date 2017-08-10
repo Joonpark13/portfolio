@@ -55,9 +55,9 @@ const App = () => (
 
         <div id="about-text-wrapper">
           <p className="page-text">
-            My name is Joon Park  and I&apos;m a web developer raised in Ithaca NY.
-            I&apos;m currently living in the Chicagoland area finishing up my last year at
-            Northwestern University, where I study physics, music composition, and computer science.
+            My name is Joon Park  and I&apos;m a web developer based in the Chicagoland area.
+            I&apos;m currently finishing up my last year at Northwestern University, where I study
+            physics, music composition, and computer science.
           </p>
           <p className="page-text">
             Physics research is actually how I learned to code - but I found
