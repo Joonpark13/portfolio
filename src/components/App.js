@@ -1,10 +1,10 @@
 import React from 'react';
-import IconButton from 'material-ui/IconButton';
 import ExpandButton from 'material-ui-icons/ExpandMore';
 
 import StripeCard from './StripeCard';
 import ProjectDisplay from './ProjectDisplay';
 import ContentPage from './ContentPage';
+import IconButton from './OverrideIconButton';
 
 import '../css/App.css';
 
@@ -33,7 +33,7 @@ const App = () => (
         </div>
       </div>
 
-      <IconButton id="scroll-prompt"><ExpandButton id="scroll-icon" /></IconButton>
+      <ExpandButton id="scroll-prompt" />
     </div>
 
     {/* Placeholder  */}
@@ -94,7 +94,7 @@ const App = () => (
             Serif.nu was the first place winner of the Northwestern IEEE Project Showcase.
           </p>
           <div className="project-summary-icons">
-            <IconButton>
+            <IconButton href="https://github.com/Joonpark13/serif.nu">
               <span className="fa fa-github"></span>
             </IconButton>
           </div>
@@ -117,7 +117,10 @@ const App = () => (
             University <a href="https://knightlab.northwestern.edu/">Knight Lab</a>.
           </p>
           <div className="project-summary-icons">
-            <IconButton>
+            <IconButton href="https://github.com/censusreporter/censusreporter">
+              <span className="fa fa-github"></span>
+            </IconButton>
+            <IconButton href="https://github.com/censusreporter/census-api">
               <span className="fa fa-github"></span>
             </IconButton>
           </div>
@@ -126,7 +129,10 @@ const App = () => (
 
       <div className="small-project-display">
         <ProjectDisplay title="RightStudent & ASM">
-          <p className="project-summary-text">Coming Soon</p>
+          <p className="project-summary-text">
+            While interning for Scholarships.com, I redesigned their two affiliate sites: RightStudent
+            and ASM Omnichannel. Contact me for more details.
+          </p>
         </ProjectDisplay>
 
         <ProjectDisplay title="Superhero Fueling" img={SuperheroScreenshot}>
@@ -151,7 +157,7 @@ const App = () => (
             and <span className="bold">Angular</span>.
           </p>
           <div className="project-summary-icons">
-            <IconButton>
+            <IconButton href="https://github.com/eecs394-f16/Superhero-Fueling">
               <span className="fa fa-github"></span>
             </IconButton>
           </div>
@@ -159,19 +165,18 @@ const App = () => (
 
         <ProjectDisplay title="JoonPark.me (v1)">
           <p className="project-summary-text">
-            <a href="http://joonpark.me-old.s3-website-us-east-1.amazonaws.com">The previous version of this website </a>
-            was designed to showcase the various
+            The previous version of this website was designed to showcase the various
             aspects of my life. The challenge was twofold: I needed a site design that would
             showcase my skills and reflect my personality, and I wanted to fully utilize the power
-            of HTML and CSS3. I was able to use minimal JavaScript to build this site, allowing me
+            of HTML and CSS3. I forced myself to use minimal JavaScript to build the site, allowing me
             to focus on improving my HTML/CSS skills.
           </p>
           <p className="project-summary-text">
             I quickly realized that I needed a more developer-centric portfolio website, and
-            redesigned the site incorporating elements from <a href="https://material.io/">Material Design</a>.
+            redesigned the site as you see here incorporating elements from <a href="https://material.io/">Material Design</a>.
           </p>
           <div className="project-summary-icons">
-            <IconButton>
+            <IconButton href="https://github.com/Joonpark13/joonpark.me-OLD">
               <span className="fa fa-github"></span>
             </IconButton>
           </div>
@@ -191,38 +196,44 @@ const App = () => (
         </p>
 
         <div id="sm" className="icons">
-          <IconButton>
+          <IconButton href="mailto:joon@joonpark.me">
             <span className="fa fa-envelope"></span>
           </IconButton>
-          <IconButton>
+          <IconButton href="https://www.linkedin.com/in/joonpark13/">
             <span className="fa fa-linkedin"></span>
           </IconButton>
-          <IconButton>
+          <IconButton href="https://github.com/Joonpark13/">
             <span className="fa fa-github"></span>
           </IconButton>
-          <IconButton>
+          <IconButton href="https://twitter.com/JoonParkMusic">
             <span className="fa fa-twitter"></span>
           </IconButton>
-          <IconButton>
+          <IconButton href="https://medium.com/@joon.park13">
             <span className="fa fa-medium"></span>
+          </IconButton>
+          <IconButton href="http://joonparkmusic.com/">
+            <span className="fa fa-music"></span>
           </IconButton>
         </div>
 
         <div id="lg" className="icons">
-          <IconButton className="contact-btn">
+          <IconButton className="contact-btn" href="mailto:joon@joonpark.me">
             <span className="fa fa-envelope fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn">
+          <IconButton className="contact-btn" href="https://www.linkedin.com/in/joonpark13/">
             <span className="fa fa-linkedin fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn">
+          <IconButton className="contact-btn" href="https://github.com/Joonpark13/">
             <span className="fa fa-github fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn">
+          <IconButton className="contact-btn" href="https://twitter.com/JoonParkMusic">
             <span className="fa fa-twitter fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn">
+          <IconButton className="contact-btn" href="https://medium.com/@joon.park13">
             <span className="fa fa-medium fa-lg"></span>
+          </IconButton>
+          <IconButton className="contact-btn" href="http://joonparkmusic.com/">
+            <span className="fa fa-music fa-lg"></span>
           </IconButton>
         </div>
       </div>
