@@ -1,4 +1,3 @@
 # joonpark.me
 
-## TODO
- - "scroll down" arrow prompt for title page
+My portfolio site - [check it out](http://joonpark.me/)!
