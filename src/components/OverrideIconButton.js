@@ -1,13 +1,13 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { withStyles, createStyleSheet } from 'material-ui/styles';
+import { withStyles } from 'material-ui/styles';
 import IconButton from 'material-ui/IconButton';
 
-const styleSheet = createStyleSheet({
+const styles = {
   iconButton: {
     color: 'var(--cerulean-60)',
   },
-});
+};
 
 const OverrideIconButton = ({ classes, className, children, ...rest }) => (
   <IconButton className={`${classes.iconButton} ${className}`} {...rest}>
@@ -29,4 +29,4 @@ OverrideIconButton.defaultProps = {
   className: '',
 };
 
-export default withStyles(styleSheet)(OverrideIconButton);
+export default withStyles(styles)(OverrideIconButton);
