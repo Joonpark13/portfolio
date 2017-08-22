@@ -61,7 +61,7 @@ const App = () => (
           </p>
           <p className="page-text">
             Physics research is actually how I learned to code - but I found
-            out I enjoy the design and problem solving of full stack development even more.
+            out I enjoy the design and problem solving of web development even more.
             As a young developer I&apos;m excited to continue feeding my insatiable appetite for
             learning. Check out some of my past projects below!
           </p>
@@ -182,7 +182,7 @@ const App = () => (
           </div>
         </ProjectDisplay>
 
-        <ProjectDisplay title="Felx Fernandez-Penny PR">
+        <ProjectDisplay title="Felix Fernandez-Penny PR">
           <p className="project-summary-text">Coming Soon</p>
         </ProjectDisplay>
       </div>
