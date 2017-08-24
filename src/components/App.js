@@ -24,7 +24,7 @@ const App = () => (
         <div className="content-width-wrapper">
           <p className="intro-text">
             <span className="bold">I&apos;m a web developer </span>
-            focused on beautiful design and fine-tuned user experiences.
+            focused on beautiful design and great user experiences.
           </p>
           <p className="intro-text">
             I currently study physics, music composition, and computer science at Northwestern
@@ -55,13 +55,13 @@ const App = () => (
 
         <div id="about-text-wrapper">
           <p className="page-text">
-            My name is Joon Park  and I&apos;m a web developer based in the Chicagoland area.
+            Welcome! I&apos;m Joon and I&apos;m a web developer based in the Chicagoland area.
             I&apos;m currently finishing up my last year at Northwestern University, where I study
             physics, music composition, and computer science.
           </p>
           <p className="page-text">
-            Physics research is actually how I learned to code - but I found
-            out I enjoy the design and problem solving of web development even more.
+            Physics research is actually how I started coding, but I soon found that
+            I enjoy the design and problem solving of web development even more.
             As a young developer I&apos;m excited to continue feeding my insatiable appetite for
             learning. Check out some of my past projects below!
           </p>
@@ -77,7 +77,7 @@ const App = () => (
           </p>
           <p className="project-summary-text">
             <a href="https://serif.nu">Serif.nu</a> is a course scheduling web app designed to
-            help Northwestern students plan their class registration more easily and quickly.
+            help Northwestern students plan their course schedules more easily and quickly.
             Motivated by frustrations in using Northwestern&apos;s own course registration system,
             this project served as my introduction to JavaScript and web development in general.
             The first version (created using <span className="bold">Flask</span> and
@@ -87,8 +87,8 @@ const App = () => (
           </p>
           <p className="project-summary-text">
             Serif.nu served not only as my gateway into web development but also taught me about
-            what it takes to turn an idea into a product under tight schedules and even skills
-            such as how to market a product.
+            what it takes to turn an idea into a product under tight schedules. It even gave me
+            opportunities to learn skills I never thought I would, such as how to market a product.
           </p>
           <p className="project-summary-text highlight">
             Serif.nu was the first place winner of the Northwestern IEEE Project Showcase.
@@ -131,7 +131,9 @@ const App = () => (
         <ProjectDisplay title="RightStudent & ASM">
           <p className="project-summary-text">
             While interning for Scholarships.com, I redesigned their two affiliate sites: RightStudent
-            and ASM Omnichannel. Contact me for more details.
+            and ASM Omnichannel, as well as a few pages on Scholarships.com. Many of the pages I worked
+            on was in need of a fresh, modern redesign. Focus was placed on the pages being seamlessly
+            responsive and extremely intuitive. Contact me for more details.
           </p>
         </ProjectDisplay>
 
