@@ -213,7 +213,7 @@ const App = () => (
         </div>
 
         <div id="lg" className="icons">
-          <IconButton className="contact-btn" href="mailto:joon@joonpark.me">
+          <IconButton className="contact-btn" href="mailto:contact@joonpark.me">
             <span className="fa fa-envelope fa-lg"></span>
           </IconButton>
           <IconButton className="contact-btn" href="https://www.linkedin.com/in/joonpark13/">
