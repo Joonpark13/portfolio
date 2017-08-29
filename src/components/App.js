@@ -192,7 +192,7 @@ const App = () => (
         </p>
 
         <div id="sm" className="icons">
-          <IconButton href="mailto:joon@joonpark.me">
+          <IconButton href="mailto:contact@joonpark.me">
             <span className="fa fa-envelope"></span>
           </IconButton>
           <IconButton href="https://www.linkedin.com/in/joonpark13/">
