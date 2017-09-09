@@ -71,9 +71,13 @@
 }
 
 .project-display-content-img {
-    width: 80%;
+    max-width: 80%;
     display: block;
     margin: 15px auto;
+}
+
+.project-display-content-img.small {
+    max-height: 150px;
 }
 
 /* React CSS Transition Group */

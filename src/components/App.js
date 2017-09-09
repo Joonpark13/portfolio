@@ -12,6 +12,7 @@ import SerifScreenshot from '../images/SerifNu.PNG';
 import CRScreenshot from '../images/CensusReporter.PNG';
 import SuperheroScreenshot from '../images/SuperheroFueling.PNG';
 import AboutImg from '../images/falling.jpg';
+import TeslaLogo from '../images/transparentTeslaLogo.png';
 
 const App = () => (
   <div id="app">
@@ -36,10 +37,12 @@ const App = () => (
     <div id="placeholder-page" className="page"></div>
 
     <div id="falling" className="page content-page">
+      {/* For smaller screen sizes */}
       <StripeCard id="about-stripecard-white" stripeColor="white">
         <h2>About</h2>
       </StripeCard>
 
+      {/* For larger screen sizes */}
       <StripeCard id="about-stripecard-primary">
         <h2>About</h2>
       </StripeCard>
@@ -98,7 +101,7 @@ const App = () => (
               </IconButton>
             </div>
           </ProjectDisplay>
-            
+
           <ProjectDisplay title="Census Reporter" img={CRScreenshot} large>
             <p className="project-summary-text">
               <a href="https://censusreporter.org">Census Reporter</a> aims to simplify access to
@@ -122,14 +125,45 @@ const App = () => (
         </div>
 
         <div className="small-project-display">
-          <ProjectDisplay title="TeslaSpotting">
+          <ProjectDisplay title="TeslaSpotting" img={TeslaLogo}>
             <p className="project-summary-text highlight">
-              Encouraging children to eat better.
+              Capture the Teslas you see on the streets!
             </p>
 
             <p className="project-summary-text">
-              Superhero Fueling was built using <span className="bold">Appgyver Supersonic </span>
-              and <span className="bold">Angular</span>.
+              The inception of TeslaSpotting went as follows:
+            </p>
+            <ul className="project-summary-text">
+              <li>Oh, hey, look, it&apos;s a Tesla!</li>
+              <li>Oh hey, look, it&apos;s another Tesla!</li>
+              <li>
+                Gee, I&apos;ve seen a lot of Teslas this week... I wish I could easily keep track of
+                when and where I&apos;ve seen them.
+              </li>
+              <li>
+                Wait, I could make an app for that!
+              </li>
+              <li>
+                Since I&apos;ve always wanted to try out <span className="bold">React Native</span>,
+                this would be a great way to learn it!
+              </li>
+            </ul>
+            <p className="project-summary-text">
+              And thus, TeslaSpotting was born. I&apos;ve found that React Native does indeed bring
+              the joy of component architecture to mobile app development while still allowing
+              developers to end up with a native product for both platforms. As a huge fan of
+              React, this was a no-brainer framework to try out.
+            </p>
+            <p className="project-summary-text">
+              However, React Native is still
+              young and has a lot of room for growth. Many functionalities are still split between
+              iOS and Android, so you can expect to have to write &quot;split code&quot; quite
+              often. But for a simple app, it does still save a lot of time than if you were to
+              develop two separate native apps. It&apos;s a framework with a lot of potential.
+            </p>
+              
+            <p className="project-summary-text">
+              Coming soon to the Play Store & App Store!
             </p>
 
             <div className="project-summary-icons">
@@ -137,15 +171,6 @@ const App = () => (
                 <span className="fa fa-github"></span>
               </IconButton>
             </div>
-          </ProjectDisplay>
-
-          <ProjectDisplay title="Scholarships.com">
-            <p className="project-summary-text">
-              While interning for Scholarships.com, I overhauled their two affiliate sites: RightStudent
-              and ASM Omnichannel, as well as redesigned a few pages on Scholarships.com. Many of the
-              pages I worked on needed a fresh, modern redesign. Focus was placed on seamlessly
-              responsive layouts and extremely intuitive page designs. Contact me for more details.
-            </p>
           </ProjectDisplay>
 
           <ProjectDisplay title="Superhero Fueling" img={SuperheroScreenshot}>
@@ -174,6 +199,15 @@ const App = () => (
                 <span className="fa fa-github"></span>
               </IconButton>
             </div>
+          </ProjectDisplay>
+
+          <ProjectDisplay title="Scholarships.com">
+            <p className="project-summary-text">
+              While interning for Scholarships.com, I overhauled their two affiliate sites: RightStudent
+              and ASM Omnichannel, as well as redesigned a few pages on Scholarships.com. Many of the
+              pages I worked on needed a fresh, modern redesign. Focus was placed on seamlessly
+              responsive layouts and extremely intuitive page designs. Contact me for more details.
+            </p>
           </ProjectDisplay>
 
           <ProjectDisplay title="JoonPark.me (v1)">

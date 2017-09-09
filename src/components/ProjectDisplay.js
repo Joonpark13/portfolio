@@ -47,6 +47,7 @@ class ProjectDisplay extends Component {
     const containerStyles = ['project-display-container'];
     const cardStyles = ['project-display-card'];
     const titleStyles = ['project-display-title'];
+    const imageStyles = ['project-display-content-img'];
 
     if (this.props.large) {
       bgStyle = {
@@ -59,6 +60,7 @@ class ProjectDisplay extends Component {
 
       cardStyles.push('small');
       titleStyles.push('small');
+      imageStyles.push('small');
     }
 
     if (this.state.open) {
@@ -100,7 +102,7 @@ class ProjectDisplay extends Component {
             >
               {this.props.img &&
                 <img
-                  className="project-display-content-img"
+                  className={imageStyles.join(' ')}
                   src={this.props.img}
                   alt="project screenshot"
                 />
