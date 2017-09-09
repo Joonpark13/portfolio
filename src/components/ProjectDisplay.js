@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import PropTypes from 'prop-types';
 import IconButton from 'material-ui/IconButton';
-import CloseIcon from 'material-ui-icons/Close';
+import ExpandLessIcon from 'material-ui-icons/ExpandLess';
 import ReactCSSTransitionGroup from 'react-addons-css-transition-group';
 import withClickOutside from 'react-click-outside';
 
@@ -74,7 +74,7 @@ class ProjectDisplay extends Component {
               <div className="project-display-expanded-header">
                 <h3 className="project-display-expanded-title">{this.props.title}</h3>
                 <IconButton onClick={this.handleClose} style={{ color: 'white' }}>
-                  <CloseIcon />
+                  <ExpandLessIcon />
                 </IconButton>
               </div>
             ) : (

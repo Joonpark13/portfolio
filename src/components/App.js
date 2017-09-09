@@ -101,8 +101,7 @@ const App = () => (
         <ProjectDisplay title="Census Reporter" img={CRScreenshot} large>
           <p className="project-summary-text">
             <a href="https://censusreporter.org">Census Reporter</a> aims to simplify access to
-            U.S. census data. This was my first experience diving into an
-            established code base. Since joining the team, I&apos;ve covered the full stack by
+            U.S. census data. Since joining the team, I&apos;ve covered the full stack by
             implementing full-text search in the Census Reporter API, designing a search results
             page, generating sitemaps, and making data download files more human-friendly.
           </p>
