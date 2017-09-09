@@ -143,10 +143,4 @@
     .project-display-container.open {
         margin-top: 0;
     }
-
-    .small-project-display {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-around;
-    }
 }
