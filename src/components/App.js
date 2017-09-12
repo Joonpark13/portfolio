@@ -163,10 +163,13 @@ const App = () => (
             </p>
               
             <p className="project-summary-text">
-              Coming soon to the Play Store & App Store!
+              Check it out on the <a href="https://play.google.com/store/apps/details?id=com.teslaspotting">Play Store</a> (coming soon to the App Store)!
             </p>
 
             <div className="project-summary-icons">
+              <IconButton href="https://play.google.com/store/apps/details?id=com.teslaspotting">
+                <span className="fa fa-android"></span>
+              </IconButton>
               <IconButton href="https://github.com/Joonpark13/tesla-spotting">
                 <span className="fa fa-github"></span>
               </IconButton>
