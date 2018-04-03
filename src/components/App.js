@@ -125,6 +125,26 @@ const App = () => (
         </div>
 
         <div className="small-project-display">
+          <ProjectDisplay title="SQL Murder Mystery">
+            <p className="project-summary-text highlight">
+              Use SQL to research clues and find out whodunit!
+            </p>
+
+            <p className="project-summary-text">
+              Inspired by the <a href="https://github.com/veltman/clmystery">command line mystery</a>,
+              I created this <a href="https://github.com/NUKnightLab/sql-mysteries">SQL murder mystery</a> with
+              the help of Cathy He and Joe Germuska as part of my work as a fellow
+              at the Northwestern University <a href="https://knightlab.northwestern.edu/">Knight Lab</a>.
+              We think it's a great way to learn or practice your SQL skills - hope you have fun
+              solving the mystery!
+            </p>
+            <div className="project-summary-icons">
+              <IconButton href="https://github.com/NUKnightLab/sql-mysteries">
+                <span className="fa fa-github"></span>
+              </IconButton>
+            </div>
+          </ProjectDisplay>
+
           <ProjectDisplay title="TeslaSpotting" img={TeslaLogo}>
             <p className="project-summary-text highlight">
               Capture the Teslas you see on the streets!
@@ -161,7 +181,7 @@ const App = () => (
               often. But for a simple app, it does still save a lot of time than if you were to
               develop two separate native apps. It&apos;s a framework with a lot of potential.
             </p>
-              
+
             <p className="project-summary-text">
               Check it out on the <a href="https://play.google.com/store/apps/details?id=com.teslaspotting">Play Store</a> (coming soon to the App Store)!
             </p>
@@ -230,10 +250,6 @@ const App = () => (
                 <span className="fa fa-github"></span>
               </IconButton>
             </div>
-          </ProjectDisplay>
-
-          <ProjectDisplay title="Felix Fernandez-Penny PR">
-            <p className="project-summary-text">Coming Soon</p>
           </ProjectDisplay>
         </div>
       </div>
