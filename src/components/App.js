@@ -54,13 +54,13 @@ const App = () => (
 
         <div id="about-text-wrapper">
           <p className="page-text">
-            Welcome! I&apos;m Joon and I&apos;m a web developer based in the Chicago area.
+            Welcome! I&apos;m Joon and I&apos;m a web developer based in Chicago.
             I&apos;m finishing up my last year at Northwestern University, where I study
             physics, music composition, and computer science.
           </p>
           <p className="page-text">
-            Physics research is actually how I started coding, but I soon found that
-            I enjoyed the design and problem-solving of web development even more.
+            I'm a huge fan of both hard-core data crunching (probably has something to do
+            with my physics background) and the creative design aspects of UI.
             As a young developer I&apos;m excited to continue feeding my insatiable appetite for
             learning. Check out some of my past projects below!
           </p>
