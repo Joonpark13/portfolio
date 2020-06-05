@@ -92,12 +92,12 @@
     transition: max-height 0.25s ease-out 0.1s, opacity 0.2s ease-in-out 0.3s;
 }
 
-.expand-content-leave {
+.expand-content-exit {
     opacity: 0;
     max-height: 1000px;
 }
 
-.expand-content-leave.expand-content-leave-active {
+.expand-content-exit.expand-content-exit-active {
     opacity: 0;
     max-height: 0;
     transition: max-height 0.25s;

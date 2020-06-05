@@ -1,9 +1,14 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 
-import '../css/StripeCard.css';
+import './StripeCard.css';
 
-const StripeCard = ({ stripeColor, children, ...rest }) => {
+interface StripeCardProps extends React.HTMLAttributes<HTMLDivElement> {
+  stripeColor?: string,
+  children: React.ReactNode,
+}
+
+function StripeCard({ stripeColor, children, ...rest }: StripeCardProps) {
+
   let style = { borderBottom: '3px solid var(--cerulean-40)' };
   if (stripeColor) {
     style = { borderBottom: `3px solid ${stripeColor}` };
@@ -20,10 +25,6 @@ const StripeCard = ({ stripeColor, children, ...rest }) => {
       <div style={style} className="right-stripe-card"></div>
     </div>
   );
-};
+}
 
 export default StripeCard;
-
-StripeCard.PropTypes = {
-  stripeColor: PropTypes.string,
-};
