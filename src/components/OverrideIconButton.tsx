@@ -10,13 +10,23 @@ const useStyles = makeStyles({
 
 interface OverrideIconButtonProps extends IconButtonProps {
   className?: string;
+  navigateTo?: string;
   children: React.ReactNode;
 }
 
-function OverrideIconButton({ className = '', children, ...rest }: OverrideIconButtonProps) {
+function OverrideIconButton({ className = '', navigateTo, children, ...rest }: OverrideIconButtonProps) {
   const classes = useStyles();
+
+  function navigateToURL(url: string) {
+    window.location.href = url;
+  }
+
   return (
-    <IconButton className={`${classes.iconButton} ${className}`} {...rest}>
+    <IconButton
+      className={`${classes.iconButton} ${className}`}
+      onClick={navigateTo ? () => navigateToURL(navigateTo) : undefined}
+      {...rest}
+    >
       {children}
     </IconButton>
   );
