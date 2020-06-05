@@ -1,13 +1,13 @@
 .project-summary-text {
-    margin: 15px;
+  margin: 15px;
 }
 
 .project-summary-text.highlight {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .project-summary-icons {
-    text-align: center;
+  text-align: center;
 }
 
 @media only screen and (min-width: 1024px) {
@@ -16,7 +16,8 @@
     justify-content: space-around;
   }
 
-  .large-project-display, .small-project-display {
+  .large-project-display,
+  .small-project-display {
     margin: 30px auto;
     padding: 0 20px;
     flex: 1 0 calc(960px / 2 - 40px);
@@ -27,7 +28,7 @@
 }
 
 @media only screen and (min-width: 1280px) {
-    .project-summary-text {
-        line-height: 1.4em;
-    }
+  .project-summary-text {
+    line-height: 1.4em;
+  }
 }

@@ -8,8 +8,8 @@ export default function ContactPage() {
     <ContentPage title="Contact">
       <div id="contact-content">
         <p className="page-text">
-          Whether it&apos;s a job opportunity or a sci-fi book (I love those) recommendation,
-          I&apos;m down to chat about anything!
+          Whether it&apos;s a job opportunity or a sci-fi book (I love those)
+          recommendation, I&apos;m down to chat about anything!
         </p>
 
         <div id="sm" className="icons">
@@ -34,22 +34,40 @@ export default function ContactPage() {
         </div>
 
         <div id="lg" className="icons">
-          <IconButton className="contact-btn" navigateTo="mailto:contact@joonpark.me">
+          <IconButton
+            className="contact-btn"
+            navigateTo="mailto:contact@joonpark.me"
+          >
             <span className="fa fa-envelope fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn" navigateTo="https://www.linkedin.com/in/joonpark13/">
+          <IconButton
+            className="contact-btn"
+            navigateTo="https://www.linkedin.com/in/joonpark13/"
+          >
             <span className="fa fa-linkedin fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn" navigateTo="https://github.com/Joonpark13/">
+          <IconButton
+            className="contact-btn"
+            navigateTo="https://github.com/Joonpark13/"
+          >
             <span className="fa fa-github fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn" navigateTo="https://twitter.com/JoonParkMusic">
+          <IconButton
+            className="contact-btn"
+            navigateTo="https://twitter.com/JoonParkMusic"
+          >
             <span className="fa fa-twitter fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn" navigateTo="https://medium.com/@joon.park13">
+          <IconButton
+            className="contact-btn"
+            navigateTo="https://medium.com/@joon.park13"
+          >
             <span className="fa fa-medium fa-lg"></span>
           </IconButton>
-          <IconButton className="contact-btn" navigateTo="http://joonparkmusic.com/">
+          <IconButton
+            className="contact-btn"
+            navigateTo="http://joonparkmusic.com/"
+          >
             <span className="fa fa-music fa-lg"></span>
           </IconButton>
         </div>

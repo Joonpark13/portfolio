@@ -13,8 +13,8 @@ export default function TitlePage() {
 
         <div className="content-width-wrapper">
           <p className="intro-text">
-            <span className="bold">I&apos;m a web developer </span>
-            focused on beautiful design and great user experiences.
+            <span className="bold">I&apos;m a web developer</span> focused on
+            beautiful design and great user experiences.
           </p>
         </div>
       </div>

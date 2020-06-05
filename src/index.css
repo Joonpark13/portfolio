@@ -20,7 +20,8 @@
   --content-width: 290px;
 }
 
-html, body {
+html,
+body {
   margin: 0;
   padding: 0;
   height: 100%;
@@ -31,7 +32,10 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
@@ -60,7 +64,8 @@ p {
   margin: 0;
 }
 
-a, a:visited {
+a,
+a:visited {
   color: var(--cerulean-60);
 }
 

@@ -3,12 +3,11 @@ import React from 'react';
 import './StripeCard.css';
 
 interface StripeCardProps extends React.HTMLAttributes<HTMLDivElement> {
-  stripeColor?: string,
-  children: React.ReactNode,
+  stripeColor?: string;
+  children: React.ReactNode;
 }
 
 function StripeCard({ stripeColor, children, ...rest }: StripeCardProps) {
-
   let style = { borderBottom: '3px solid var(--cerulean-40)' };
   if (stripeColor) {
     style = { borderBottom: `3px solid ${stripeColor}` };

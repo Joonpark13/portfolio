@@ -15,17 +15,17 @@ function Ripple({ style = {}, disabled = false, children }: RippleProps) {
     backgroundColor: 'transparent',
     textTransform: 'none',
     display: 'block',
-    width: '100%'
+    width: '100%',
   };
 
   const mergedStyles = {
     ...btnStyle,
-    ...style
+    ...style,
   };
 
   return (
     <Button disableRipple={disabled} style={mergedStyles}>
-        {children}
+      {children}
     </Button>
   );
 }

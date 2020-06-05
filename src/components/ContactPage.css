@@ -9,21 +9,21 @@
 }
 
 .icons {
-    text-align: center;
-    color: var(--cerulean-40);
-    margin: 30px auto;
+  text-align: center;
+  color: var(--cerulean-40);
+  margin: 30px auto;
 }
 
 .icons#lg {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 1024px) {
-    .icons#sm {
-        display: none;
-    }
+  .icons#sm {
+    display: none;
+  }
 
-    .icons#lg {
-        display: block;
-    }
+  .icons#lg {
+    display: block;
+  }
 }

@@ -1,150 +1,150 @@
 :root {
-    --large-card-height: 186px; /* Determined from picture ratio */
+  --large-card-height: 186px; /* Determined from picture ratio */
 }
 
 .project-display-container {
-    position: relative;
-    margin: 20px 0;
-    width: 100%;
-    /* box-shadow: 5px 4px 3px var(--cool-gray-30); */
-    overflow: hidden;
-    z-index: 10;
+  position: relative;
+  margin: 20px 0;
+  width: 100%;
+  /* box-shadow: 5px 4px 3px var(--cool-gray-30); */
+  overflow: hidden;
+  z-index: 10;
 }
 
 .project-display-container.open {
-    margin-bottom: 5px;
-    background-color: var(--cerulean-60);
+  margin-bottom: 5px;
+  background-color: var(--cerulean-60);
 }
 
 .project-display-card {
-    height: var(--large-card-height);
-    position: relative;
-    background-size: contain;
+  height: var(--large-card-height);
+  position: relative;
+  background-size: contain;
 }
 
 .project-display-card.small {
-    height: 50px;
+  height: 50px;
 }
 
 .project-display-card:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .project-display-title {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-    color: white;
-    line-height: 1em;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+  line-height: 1em;
 }
 
 .project-display-expanded-header {
-    color: white;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .project-display-expanded-title {
-    margin: 5px 10px;
+  margin: 5px 10px;
 }
 
 .project-display-expanded-content {
-    overflow: auto;
+  overflow: auto;
 }
 
 .project-display-floor {
-    position: relative;
-    left: 0;
-    width: 100%;
-    transition: left ease-in-out 0.2s, width ease-in-out 0.2s;
+  position: relative;
+  left: 0;
+  width: 100%;
+  transition: left ease-in-out 0.2s, width ease-in-out 0.2s;
 }
 
 .project-display-floor.open {
-    --diff: calc(100vw - var(--content-width));
-    --half: calc(var(--diff) / 2);
-    left: calc(-1 * var(--half));
-    width: 100vw;
-    background-color: var(--cerulean-1);
+  --diff: calc(100vw - var(--content-width));
+  --half: calc(var(--diff) / 2);
+  left: calc(-1 * var(--half));
+  width: 100vw;
+  background-color: var(--cerulean-1);
 }
 
 .project-display-content-img {
-    max-width: 80%;
-    display: block;
-    margin: 15px auto;
+  max-width: 80%;
+  display: block;
+  margin: 15px auto;
 }
 
 .project-display-content-img.small {
-    max-height: 150px;
+  max-height: 150px;
 }
 
 /* React CSS Transition Group */
 .expand-content-enter {
-    max-height: 0;
-    opacity: 0;
+  max-height: 0;
+  opacity: 0;
 }
 
 .expand-content-enter.expand-content-enter-active {
-    max-height: 1000px; /* Arbitrarily large value */
-    opacity: 1;
-    transition: max-height 0.25s ease-out 0.1s, opacity 0.2s ease-in-out 0.3s;
+  max-height: 1000px; /* Arbitrarily large value */
+  opacity: 1;
+  transition: max-height 0.25s ease-out 0.1s, opacity 0.2s ease-in-out 0.3s;
 }
 
 .expand-content-exit {
-    opacity: 0;
-    max-height: 1000px;
+  opacity: 0;
+  max-height: 1000px;
 }
 
 .expand-content-exit.expand-content-exit-active {
-    opacity: 0;
-    max-height: 0;
-    transition: max-height 0.25s;
+  opacity: 0;
+  max-height: 0;
+  transition: max-height 0.25s;
 }
 
 @media only screen and (min-width: 600px) {
-    :root {
-        --large-card-height: 366px; /* Determined from picture ratio */
-    }
+  :root {
+    --large-card-height: 366px; /* Determined from picture ratio */
+  }
 
-    .project-display-title {
-        font-size: var(--typescale-2);
-    }
+  .project-display-title {
+    font-size: var(--typescale-2);
+  }
 
-    .project-display-title.small {
-        font-size: var(--typescale-3);
-    }
+  .project-display-title.small {
+    font-size: var(--typescale-3);
+  }
 }
 
 @media only screen and (min-width: 1024px) {
-    :root {
-        --large-card-height: 256px; /* Determined from picture ratio */
-    }
+  :root {
+    --large-card-height: 256px; /* Determined from picture ratio */
+  }
 
-    .project-display-floor {
-        flex-basis: 460px;
-    }
+  .project-display-floor {
+    flex-basis: 460px;
+  }
 
-    .project-display-card {
-        background-size: 100%;
-    }
+  .project-display-card {
+    background-size: 100%;
+  }
 
-    .project-display-floor {
-        transition: none;
-    }
+  .project-display-floor {
+    transition: none;
+  }
 
-    .project-display-floor.open {
-        left: 0;
-        width: 100%;
-        margin-top: 15px;
-    }
+  .project-display-floor.open {
+    left: 0;
+    width: 100%;
+    margin-top: 15px;
+  }
 
-    .project-display-title {
-        width: 100%;
-    }
+  .project-display-title {
+    width: 100%;
+  }
 
-    .project-display-container.open {
-        margin-top: 0;
-    }
+  .project-display-container.open {
+    margin-top: 0;
+  }
 }

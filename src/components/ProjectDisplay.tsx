@@ -15,16 +15,18 @@ type ProjectDisplayProps = {
   children: React.ReactNode;
 };
 
-function ProjectDisplay({ title, img = '', large = false, children }: ProjectDisplayProps) {
+function ProjectDisplay({
+  title,
+  img = '',
+  large = false,
+  children,
+}: ProjectDisplayProps) {
   const [open, setOpen] = useState(false);
   const [animationCounter, setAnimationCounter] = useState(0);
 
   function handleOpen() {
     if (!open) {
-      setTimeout(
-        () => setOpen(true),
-        250,
-      );
+      setTimeout(() => setOpen(true), 250);
       setAnimationCounter(animationCounter + 1);
     }
   }
@@ -63,44 +65,51 @@ function ProjectDisplay({ title, img = '', large = false, children }: ProjectDis
   return (
     <OutsideClickHandler onOutsideClick={handleClose}>
       <div className={floorStyles.join(' ')}>
-        <div onClick={handleOpen} className={containerStyles.join(' ')} role="button" tabIndex={0}>
-          {open
-            ? (
-              <div className="project-display-expanded-header">
-                <h3 className="project-display-expanded-title">{title}</h3>
-                <IconButton onClick={handleClose} style={{ color: 'white' }}>
-                  <ExpandLess />
-                </IconButton>
-              </div>
-            ) : (
-              <Ripple>
-                <div style={bgStyle} className={cardStyles.join(' ')}></div>
-                {large
-                  ? <h3 className={titleStyles.join(' ')}>{title}</h3>
-                  : <h4 className={titleStyles.join(' ')}>{title}</h4>
-                }
-              </Ripple>
-            )
-          }
+        <div
+          onClick={handleOpen}
+          className={containerStyles.join(' ')}
+          role="button"
+          tabIndex={0}
+        >
+          {open ? (
+            <div className="project-display-expanded-header">
+              <h3 className="project-display-expanded-title">{title}</h3>
+              <IconButton onClick={handleClose} style={{ color: 'white' }}>
+                <ExpandLess />
+              </IconButton>
+            </div>
+          ) : (
+            <Ripple>
+              <div style={bgStyle} className={cardStyles.join(' ')}></div>
+              {large ? (
+                <h3 className={titleStyles.join(' ')}>{title}</h3>
+              ) : (
+                <h4 className={titleStyles.join(' ')}>{title}</h4>
+              )}
+            </Ripple>
+          )}
         </div>
         <TransitionGroup>
-          {open &&
-            <CSSTransition classNames="expand-content" timeout={{ enter: 500, exit: 250 }}>
+          {open && (
+            <CSSTransition
+              classNames="expand-content"
+              timeout={{ enter: 500, exit: 250 }}
+            >
               <div
                 key={title + animationCounter}
                 className="project-display-expanded-content"
               >
-                {img &&
+                {img && (
                   <img
                     className={imageStyles.join(' ')}
                     src={img}
                     alt="project screenshot"
                   />
-                }
+                )}
                 {children}
               </div>
             </CSSTransition>
-          }
+          )}
         </TransitionGroup>
       </div>
     </OutsideClickHandler>

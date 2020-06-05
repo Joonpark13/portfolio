@@ -1,9 +1,7 @@
 #falling {
   background-color: rgb(121, 102, 87); /* From rocks at bottom of image */
-  background-image: linear-gradient(
-      rgba(0,0,0,0.1),
-      rgba(0,0,0,0.99)
-  ), url('../images/falling.jpg');
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.99)),
+    url('../images/falling.jpg');
   background-size: 600px;
   background-repeat: no-repeat;
   color: white;
@@ -14,11 +12,11 @@
 }
 
 #about-stripecard-primary {
-    display: none;
+  display: none;
 }
 
 #about-img-large-screen {
-    display: none;
+  display: none;
 }
 
 @media only screen and (min-width: 600px) {
@@ -43,10 +41,8 @@
 
 @media only screen and (min-width: 1024px) {
   #falling {
-    background-image: linear-gradient(
-      rgba(0,0,0,0.1),
-      rgba(0,0,0,0.7)
-    ), url('../images/falling_large.jpg');
+    background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.7)),
+      url('../images/falling_large.jpg');
     background-size: cover;
   }
 

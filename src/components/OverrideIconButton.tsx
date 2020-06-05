@@ -14,7 +14,12 @@ interface OverrideIconButtonProps extends IconButtonProps {
   children: React.ReactNode;
 }
 
-function OverrideIconButton({ className = '', navigateTo, children, ...rest }: OverrideIconButtonProps) {
+function OverrideIconButton({
+  className = '',
+  navigateTo,
+  children,
+  ...rest
+}: OverrideIconButtonProps) {
   const classes = useStyles();
 
   function navigateToURL(url: string) {

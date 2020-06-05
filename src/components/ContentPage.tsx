@@ -14,9 +14,7 @@ function ContentPage({ title, children, ...rest }: ContentPageProps) {
         <h2>{title}</h2>
       </StripeCard>
 
-      <div className="content-width-wrapper">
-        {children}
-      </div>
+      <div className="content-width-wrapper">{children}</div>
     </div>
   );
 }
