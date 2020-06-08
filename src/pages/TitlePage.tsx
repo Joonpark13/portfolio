@@ -1,6 +1,6 @@
 import React from 'react';
 import { ExpandMore } from '@material-ui/icons';
-import StripeCard from './StripeCard';
+import StripeCard from '../components/StripeCard';
 import './TitlePage.css';
 
 export default function TitlePage() {
@@ -12,7 +12,7 @@ export default function TitlePage() {
         </StripeCard>
 
         <div className="content-width-wrapper">
-          <p className="intro-text">I&apos;m a software engineer at Google.</p>
+          <p className="intro-text">I&apos;m a Software Engineer at Google.</p>
         </div>
       </div>
 

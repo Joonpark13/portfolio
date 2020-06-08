@@ -1,6 +1,6 @@
 import React from 'react';
-import ContentPage from './ContentPage';
-import IconButton from './OverrideIconButton';
+import ContentPage from '../components/ContentPage';
+import IconButton from '../components/OverrideIconButton';
 import './ContactPage.css';
 
 export default function ContactPage() {

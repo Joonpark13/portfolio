@@ -1,12 +1,14 @@
 import React from 'react';
-import SerifScreenshot from './images/SerifNu.PNG';
-import CRScreenshot from './images/CensusReporter.PNG';
-import SuperheroScreenshot from './images/SuperheroFueling.PNG';
-import TeslaLogo from './images/transparentTeslaLogo.png';
-import Link from './components/Link';
-import ProjectDisplay from './ProjectDisplay';
-import ContentPage from './ContentPage';
-import IconButton from './OverrideIconButton';
+import SerifScreenshot from '../images/SerifNu.PNG';
+import CRScreenshot from '../images/CensusReporter.PNG';
+import SuperheroScreenshot from '../images/SuperheroFueling.PNG';
+import TeslaLogo from '../images/transparentTeslaLogo.png';
+import SQLMurderMysteryImage from '../images/SQLMurderMystery.png';
+import Link from '../components/Link';
+import ProjectDisplay from '../components/ProjectDisplay';
+import ContentPage from '../components/ContentPage';
+import IconButton from '../components/OverrideIconButton';
+import Text from '../components/Text';
 import './ProjectsPage.css';
 
 export default function ProjectsPage() {
@@ -20,17 +22,16 @@ export default function ProjectsPage() {
               Unviersity.
             </p>
             <p className="project-summary-text">
-              <Link href="https://serif.nu">Serif.nu</Link> is a course
+              <Link href="https://serif.nu">Serif.nu</Link> was a course
               scheduling web app designed to help Northwestern students plan
               their course schedules more easily and quickly. The project aimed
               to address frustrations in using Northwestern&apos;s own course
               registration system, but it became my introduction to JavaScript
               and web development in general. The first version (created using{' '}
-              <span className="bold">Flask</span> and
-              <span className="bold"> PostgreSQL</span>) was released Fall 2015,
-              and a new version (rebuilt from scratch using{' '}
-              <span className="bold">React</span> and
-              <span className="bold"> Node.js</span>) was released Winter 2017.
+              <Text bold>Flask</Text> and
+              <Text bold> PostgreSQL</Text>) was released Fall 2015, and a new
+              version (rebuilt from scratch using <Text bold>React</Text> and
+              <Text bold> Node.js</Text>) was released Winter 2017.
             </p>
             <p className="project-summary-text">
               Serif.nu served not only as my gateway into web development, but
@@ -50,20 +51,62 @@ export default function ProjectsPage() {
             </div>
           </ProjectDisplay>
 
+          <ProjectDisplay
+            title="SQL Murder Mystery"
+            img={SQLMurderMysteryImage}
+            large
+          >
+            <p className="project-summary-text highlight">
+              Use SQL to research clues and find out whodunit!
+            </p>
+
+            <p className="project-summary-text">
+              Inspired by the{' '}
+              <Link href="https://github.com/veltman/clmystery">
+                command line murder mystery
+              </Link>
+              , I created this{' '}
+              <Link href="https://mystery.knightlab.com/">
+                SQL murder mystery
+              </Link>{' '}
+              with the help of Cathy He and Joe Germuska as part of my work as a
+              fellow at the Northwestern University{' '}
+              <Link href="https://knightlab.northwestern.edu/">Knight Lab</Link>
+              . We think it's a great way to learn or practice your SQL skills -
+              hope you have fun solving it!
+            </p>
+            <p className="project-summary-text highlight">
+              SQL Murder Mystery was featured on{' '}
+              <Link href="https://lifehacker.com/learn-and-practice-sql-with-this-game-1840484299">
+                Lifehacker
+              </Link>{' '}
+              and{' '}
+              <Link href="https://news.ycombinator.com/item?id=21799988">
+                Hacker News
+              </Link>
+              .
+            </p>
+            <div className="project-summary-icons">
+              <IconButton navigateTo="https://mystery.knightlab.com/">
+                <i className="fa fa-external-link-alt"></i>
+              </IconButton>
+              <IconButton navigateTo="https://github.com/NUKnightLab/sql-mysteries">
+                <span className="fa fa-github"></span>
+              </IconButton>
+            </div>
+          </ProjectDisplay>
+
           <ProjectDisplay title="Census Reporter" img={CRScreenshot} large>
             <p className="project-summary-text">
               <Link href="https://censusreporter.org">Census Reporter</Link>{' '}
-              aims to simplify access to U.S. census data. Since joining the
-              team, I&apos;ve covered the full stack by implementing full-text
-              search in the Census Reporter API, designing a search results
-              page, generating sitemaps, and making data download files more
-              human-friendly.
+              aims to simplify access to U.S. census data. My focus was to
+              implement full-text search in the Census Reporter API, and to
+              design a search results page. I also worked on generating sitemaps
+              and making data download files more human-friendly.
             </p>
             <p className="project-summary-text">
-              Census Reporter was built using{' '}
-              <span className="bold">Django</span>,
-              <span className="bold"> Flask</span>, and{' '}
-              <span className="bold">PostgreSQL</span>.
+              Census Reporter was built using <Text bold>Django</Text>,
+              <Text bold> Flask</Text>, and <Text bold>PostgreSQL</Text>.
             </p>
             <div className="project-summary-icons">
               <IconButton navigateTo="https://github.com/censusreporter/censusreporter">
@@ -77,28 +120,15 @@ export default function ProjectsPage() {
         </div>
 
         <div className="small-project-display">
-          <ProjectDisplay title="SQL Murder Mystery">
+          <ProjectDisplay title="Tuning Teacher">
             <p className="project-summary-text highlight">
-              Use SQL to research clues and find out whodunit!
+              A way to improve your fine pitch skills for trained musicians.
             </p>
-
             <p className="project-summary-text">
-              Inspired by the{' '}
-              <Link href="https://github.com/veltman/clmystery">
-                command line mystery
-              </Link>
-              , I created this{' '}
-              <Link href="https://github.com/NUKnightLab/sql-mysteries">
-                SQL murder mystery
-              </Link>{' '}
-              with the help of Cathy He and Joe Germuska as part of my work as a
-              fellow at the Northwestern University{' '}
-              <Link href="https://knightlab.northwestern.edu/">Knight Lab</Link>
-              . We think it's a great way to learn or practice your SQL skills -
-              hope you have fun solving the mystery!
+              More information coming soon!
             </p>
             <div className="project-summary-icons">
-              <IconButton navigateTo="https://github.com/NUKnightLab/sql-mysteries">
+              <IconButton navigateTo="https://github.com/joonpark13/tuning-teacher">
                 <span className="fa fa-github"></span>
               </IconButton>
             </div>
@@ -110,28 +140,15 @@ export default function ProjectsPage() {
             </p>
 
             <p className="project-summary-text">
-              The inception of TeslaSpotting went as follows:
+              TeslaSpotting was a small project created for the purpose of
+              teaching myself <Text bold>React Native</Text>.
             </p>
-            <ul className="project-summary-text">
-              <li>Oh, hey, look, it&apos;s a Tesla!</li>
-              <li>Oh hey, look, it&apos;s another Tesla!</li>
-              <li>
-                Gee, I&apos;ve seen a lot of Teslas this week... I wish I could
-                easily keep track of when and where I&apos;ve seen them.
-              </li>
-              <li>Wait, I could make an app for that!</li>
-              <li>
-                Since I&apos;ve always wanted to try out{' '}
-                <span className="bold">React Native</span>, this would be a
-                great way to learn it!
-              </li>
-            </ul>
             <p className="project-summary-text">
-              And thus, TeslaSpotting was born. I&apos;ve found that React
-              Native does indeed bring the joy of component architecture to
-              mobile app development while still allowing developers to end up
-              with a native product for both platforms. As a huge fan of React,
-              this was a no-brainer framework to try out.
+              I&apos;ve found that React Native does indeed bring the joy of
+              component architecture to mobile app development while still
+              allowing developers to end up with a native product for both
+              platforms. As a huge fan of React, this was a no-brainer framework
+              to try out.
             </p>
             <p className="project-summary-text">
               However, React Native is still young and has a lot of room for
@@ -141,23 +158,6 @@ export default function ProjectsPage() {
               time than if you were to develop two separate native apps.
               It&apos;s a framework with a lot of potential.
             </p>
-
-            <p className="project-summary-text">
-              Check it out on the{' '}
-              <Link href="https://play.google.com/store/apps/details?id=com.teslaspotting">
-                Play Store
-              </Link>{' '}
-              (coming soon to the App Store)!
-            </p>
-
-            <div className="project-summary-icons">
-              <IconButton navigateTo="https://play.google.com/store/apps/details?id=com.teslaspotting">
-                <span className="fa fa-android"></span>
-              </IconButton>
-              <IconButton navigateTo="https://github.com/Joonpark13/tesla-spotting">
-                <span className="fa fa-github"></span>
-              </IconButton>
-            </div>
           </ProjectDisplay>
 
           <ProjectDisplay title="Superhero Fueling" img={SuperheroScreenshot}>
@@ -172,21 +172,21 @@ export default function ProjectsPage() {
               on how healthy their choice of foods was.
             </p>
             <p className="project-summary-text">
-              This app was built in the second five weeks of the Northwestern
-              University
+              This app was built in over the course of five weeks for the
+              Northwestern University
               <Link href="https://www.cs.northwestern.edu/academics/courses/394/">
                 {' '}
                 EECS 394{' '}
               </Link>
               course as part of a four-person student developer team. Through
               working with real client managers, we practiced{' '}
-              <span className="bold">agile</span> methodologies and learned
-              about the product launch cycle.
+              <Text bold>agile</Text> methodologies and learned about the
+              product launch cycle.
             </p>
             <p className="project-summary-text">
               Superhero Fueling was built using{' '}
-              <span className="bold">Appgyver Supersonic </span>
-              and <span className="bold">Angular</span>.
+              <Text bold>Appgyver Supersonic</Text> and{' '}
+              <Text bold>Angular</Text>.
             </p>
             <div className="project-summary-icons">
               <IconButton navigateTo="https://github.com/eecs394-f16/Superhero-Fueling">

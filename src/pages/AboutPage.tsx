@@ -1,7 +1,7 @@
 import React from 'react';
-import StripeCard from './StripeCard';
-import ChicagoImg from './images/ChicagoSkylineHorizontal.jpg';
-import Link from './components/Link';
+import StripeCard from '../components/StripeCard';
+import ChicagoImg from '../images/ChicagoSkylineHorizontal.jpg';
+import Link from '../components/Link';
 import './AboutPage.css';
 
 const aboutPageLinkColor = 'var(--cerulean-20)';
@@ -38,8 +38,8 @@ export default function AboutPage() {
           <p className="page-text">
             I was previously a Frontend Software Engineer at Grubhub, and before
             that I was at Northwestern University where I graduated with a BA in
-            Physics and BM in Music Composition. While I was a student I was a
-            fellow for{' '}
+            Physics and a BM in Music Composition. While I was a student, I was
+            a fellow for{' '}
             <Link
               color={aboutPageLinkColor}
               href="https://knightlab.northwestern.edu/"

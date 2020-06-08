@@ -1,8 +1,8 @@
 import React from 'react';
-import TitlePage from './TitlePage';
-import AboutPage from './AboutPage';
-import ProjectsPage from './ProjectsPage';
-import ContactPage from './ContactPage';
+import TitlePage from './pages/TitlePage';
+import AboutPage from './pages/AboutPage';
+import ProjectsPage from './pages/ProjectsPage';
+import ContactPage from './pages/ContactPage';
 import './global.css';
 import './App.css';
 
