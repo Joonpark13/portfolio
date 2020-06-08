@@ -1,0 +1,9 @@
+#app {
+  height: 100%;
+}
+
+#placeholder-page {
+  height: 100%;
+  z-index: -20; /* arbitary value below -10 */
+  position: relative; /* required to make page go below fixed positioned title page */
+}

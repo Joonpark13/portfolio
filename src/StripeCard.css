@@ -1,0 +1,21 @@
+.stripe-card-container {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+}
+
+.center-stripe-card {
+  flex-basis: var(--content-width);
+  padding: 5px 15px;
+}
+
+.stripe-card-spacer {
+  width: 15px;
+}
+
+@media only screen and (min-width: 840px) {
+  .left-stripe-card,
+  .right-stripe-card {
+    flex-grow: 1;
+  }
+}

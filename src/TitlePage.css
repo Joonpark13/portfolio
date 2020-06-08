@@ -1,0 +1,30 @@
+#title-page {
+  height: 100%;
+  background-color: var(--cerulean-1);
+  z-index: -10; /* arbitary value below 0 */
+  position: fixed;
+}
+
+#title-content {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+#name-line {
+  font-weight: normal;
+}
+
+.intro-text {
+  margin: 30px 0;
+}
+
+#scroll-prompt {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  color: var(--cerulean-40);
+}
