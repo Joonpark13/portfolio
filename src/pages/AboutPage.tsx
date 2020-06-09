@@ -30,7 +30,7 @@ export default function AboutPage() {
 
         <div id="about-text-wrapper">
           <p className="page-text">
-            Welcome! I&apos;m a software engineer at Google, based in Chicago.
+            Welcome! I&apos;m a Software Engineer at Google, based in Chicago.
             I'm primarily focused on web frontend development - there are very
             few things I love more than building a clean and intuitive user
             experience!

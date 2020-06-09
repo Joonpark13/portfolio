@@ -7,11 +7,6 @@ export default function ContactPage() {
   return (
     <ContentPage title="Contact">
       <div id="contact-content">
-        <p className="page-text">
-          Whether it&apos;s a job opportunity or a sci-fi book (I love those)
-          recommendation, I&apos;m down to chat about anything!
-        </p>
-
         <div id="sm" className="icons">
           <IconButton navigateTo="mailto:contact@joonpark.me">
             <span className="fa fa-envelope"></span>
