@@ -23,7 +23,7 @@ function OverrideIconButton({
   const classes = useStyles();
 
   function navigateToURL(url: string) {
-    window.location.href = url;
+    window.open(url, '_blank');
   }
 
   return (

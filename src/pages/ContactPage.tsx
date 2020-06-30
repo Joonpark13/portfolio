@@ -1,12 +1,28 @@
 import React from 'react';
+import styled from 'styled-components';
 import ContentPage from '../components/ContentPage';
 import IconButton from '../components/OverrideIconButton';
+import Text from '../components/Text';
 import './ContactPage.css';
+
+const ContactParagraph = styled.div`
+  margin-bottom: 20px;
+`;
 
 export default function ContactPage() {
   return (
     <ContentPage title="Contact">
       <div id="contact-content">
+        <ContactParagraph>
+          If you'd like to learn more about one of my projects, inquire about
+          one of my talks, or reach out for any other reason, please don't
+          hesitate to contact me!
+        </ContactParagraph>
+
+        <Text small>
+          NOTE: I am not searching for new opportunities at this time.
+        </Text>
+
         <div id="sm" className="icons">
           <IconButton navigateTo="mailto:contact@joonpark.me">
             <span className="fa fa-envelope"></span>

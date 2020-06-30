@@ -131,6 +131,29 @@ export default function ProjectsPage() {
               <IconButton navigateTo="https://github.com/joonpark13/tuning-teacher">
                 <span className="fa fa-github"></span>
               </IconButton>
+              <IconButton navigateTo="https://tuning-teacher.netlify.app/">
+                <i className="fa fa-external-link-alt"></i>
+              </IconButton>
+            </div>
+          </ProjectDisplay>
+
+          <ProjectDisplay title="Rummy 500">
+            <p className="project-summary-text highlight">
+              A 2 player online multiplayer verson of Rummy 500.
+            </p>
+            <p className="project-summary-text">
+              Rummy 500 was created for my Rummy enthusiast friends and I to be
+              able to play online during the COVID-19 pandemic stay-at-home
+              orders. It was also used to teach myself TypeScript, specifically
+              using TypeScript in conjuction with React and Firebase.
+            </p>
+            <p className="project-summary-text">
+              More information coming soon!
+            </p>
+            <div className="project-summary-icons">
+              <IconButton navigateTo="https://github.com/Joonpark13/rummy">
+                <span className="fa fa-github"></span>
+              </IconButton>
             </div>
           </ProjectDisplay>
 
