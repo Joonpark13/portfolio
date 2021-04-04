@@ -21,6 +21,10 @@ export default function ProjectsPage() {
               Simple. Fast. Visual. Course scheduling for Northwestern
               Unviersity.
             </p>
+            <p className="project-summary-text emphasis">
+              Learning focus: technical leadership, mentorship, full stack design,
+              highly maintainable software methodologies.
+            </p>
             <p className="project-summary-text">
               <Link href="https://serif.nu">Serif.nu</Link> was a course
               scheduling web app designed to help Northwestern students plan
@@ -39,6 +43,11 @@ export default function ProjectsPage() {
               under tight schedules. I even learned a few non-technical skills
               along the way, like how to market a product and how to pitch an
               idea to potential partners.
+            </p>
+            <p className="project-summary-text">
+              After graduation, I transitioned to a technical lead/team mentor
+              role and oversaw a group of Northwestern students as they maintained
+              and improved the application under my guidance.
             </p>
             <p className="project-summary-text highlight">
               Serif.nu was the first place winner of the Northwestern IEEE
@@ -124,8 +133,24 @@ export default function ProjectsPage() {
             <p className="project-summary-text highlight">
               A way to improve your fine pitch skills for trained musicians.
             </p>
+            <p className="project-summary-text emphasis">
+              Learning focus: <Link href="https://recoiljs.org/">Recoil</Link>
+            </p>
             <p className="project-summary-text">
-              More information coming soon!
+              This app is a fine pitch perception improvement app designed for
+              skilled classical musicians. A friend of mine from my time at
+              Northwestern's school of music came up with this simple yet
+              extremely useful idea to allow advanced classical musicians
+              improve or maintain their fine pitch perception by quizzing
+              themselves to see if they can adjust an out-of-tune pitch to
+              perfectly match a given pitch.
+            </p>
+            <p className="project-summary-text">
+              I was excited to use this as an opportunity to try out Recoil, a
+              brand-new state management library for React apps. I was incredibly
+              satisfied with the simple yet extremely scalable API of Recoil and
+              I hope to have an opportunity to use the library in a larger scale
+              application as I believe it has some serious potential.
             </p>
             <div className="project-summary-icons">
               <IconButton navigateTo="https://github.com/joonpark13/tuning-teacher">
@@ -141,14 +166,17 @@ export default function ProjectsPage() {
             <p className="project-summary-text highlight">
               A 2 player online multiplayer verson of Rummy 500.
             </p>
-            <p className="project-summary-text">
-              Rummy 500 was created for my Rummy enthusiast friends and I to be
-              able to play online during the COVID-19 pandemic stay-at-home
-              orders. It was also used to teach myself TypeScript, specifically
-              using TypeScript in conjuction with React and Firebase.
+            <p className="project-summary-text emphasis">
+              Learning focus: TypeScript, Firebase
             </p>
             <p className="project-summary-text">
-              More information coming soon!
+              Rummy 500 was created for my Rummy enthusiast friends and I to be
+              able to play online during the COVID-19 lockdowns. While it was not my
+              first experience with TypeScript, it was my first attempt at using it
+              in a non-static, application-logic-heavy use case. It was also my first
+              time using it in conjunction with Firebase. All in all, I believe
+              TypeScript is the future for writing maintainable enterprise scale
+              applications.
             </p>
             <div className="project-summary-icons">
               <IconButton navigateTo="https://github.com/Joonpark13/rummy">
@@ -157,11 +185,38 @@ export default function ProjectsPage() {
             </div>
           </ProjectDisplay>
 
+          <ProjectDisplay title="Annie Sanford's Portfolio">
+            <p className="project-summary-text highlight">
+              Portfolio site of Annie Sanford, incoming design student.
+            </p>
+            <p className="project-summary-text emphasis">
+              Learning focus: Gatsby
+            </p>
+            <p className="project-summary-text">
+              I implemented the portfolio site of Annie Sanford, an incoming HCI/UX
+              graduate student. As this was a mostly static site, I thought it would
+              be a perfect opportunity to see what all the fuss around Gatsby was
+              about. While I had mostly used Create-React-App (CRA) until then,
+              Gatsby turned out to be a super charged version of CRA, providing
+              developers with many performance benefits and optimizations out of the
+              box. As I grow to be more aware of the importance of various
+              optimization techniques, I imagine Gatsby will be a framework I revisit
+              in the future.
+            </p>
+            <div className="project-summary-icons">
+              <IconButton navigateTo="https://anniesanford.com">
+                <i className="fa fa-external-link-alt"></i>
+              </IconButton>
+            </div>
+          </ProjectDisplay>
+
           <ProjectDisplay title="TeslaSpotting" img={TeslaLogo}>
             <p className="project-summary-text highlight">
               Capture the Teslas you see on the streets!
             </p>
-
+            <p className="project-summary-text emphasis">
+              Learning focus: React Native
+            </p>
             <p className="project-summary-text">
               TeslaSpotting was a small project created for the purpose of
               teaching myself <Text bold>React Native</Text>.
@@ -186,6 +241,9 @@ export default function ProjectsPage() {
           <ProjectDisplay title="Superhero Fueling" img={SuperheroScreenshot}>
             <p className="project-summary-text highlight">
               Encouraging children to eat better.
+            </p>
+            <p className="project-summary-text emphasis">
+              Learning focus: Agile best practices
             </p>
             <p className="project-summary-text">
               Superhero Fueling is an app for children that gameifies their

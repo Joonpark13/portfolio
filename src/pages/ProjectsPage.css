@@ -6,6 +6,10 @@
   font-weight: bold;
 }
 
+.project-summary-text.emphasis {
+  font-style: italic;
+}
+
 .project-summary-icons {
   text-align: center;
 }

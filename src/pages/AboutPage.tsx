@@ -31,15 +31,15 @@ export default function AboutPage() {
         <div id="about-text-wrapper">
           <p className="page-text">
             Welcome! I&apos;m a Software Engineer at Google, based in Chicago.
-            I'm primarily focused on web frontend development - there are very
-            few things I love more than building a clean and intuitive user
-            experience!
+            I'm primarily focused on web frontend development: I'm passionate
+            about building clean frontend architectures that enable delightful
+            user AND developer experiences.
           </p>
           <p className="page-text">
             I was previously a Frontend Software Engineer at Grubhub, and before
-            that I was at Northwestern University where I graduated with a BA in
-            Physics and a BM in Music Composition. While I was a student, I was
-            a fellow for{' '}
+            that I was a student at Northwestern University where I graduated with
+            a BA in Physics and a BM in Music Composition. While I was a student,
+            I was a fellow at{' '}
             <Link
               color={aboutPageLinkColor}
               href="https://knightlab.northwestern.edu/"

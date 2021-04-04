@@ -19,10 +19,6 @@ export default function ContactPage() {
           hesitate to contact me!
         </ContactParagraph>
 
-        <Text small>
-          NOTE: I am not searching for new opportunities at this time.
-        </Text>
-
         <div id="sm" className="icons">
           <IconButton navigateTo="mailto:contact@joonpark.me">
             <span className="fa fa-envelope"></span>
@@ -71,7 +67,7 @@ export default function ContactPage() {
           </IconButton>
           <IconButton
             className="contact-btn"
-            navigateTo="https://medium.com/@joon.park13"
+            navigateTo="https://joonpark13.medium.com/"
           >
             <span className="fa fa-medium fa-lg"></span>
           </IconButton>

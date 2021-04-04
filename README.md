@@ -1,3 +1,3 @@
-# joonpark.me
+# joonpark.dev
 
-My portfolio site - [check it out](http://joonpark.me/)!
+My portfolio site - [check it out](http://joonpark.dev/)!
