@@ -2,7 +2,6 @@ import React from 'react';
 import styled from 'styled-components';
 import ContentPage from '../components/ContentPage';
 import IconButton from '../components/OverrideIconButton';
-import Text from '../components/Text';
 import './ContactPage.css';
 
 const ContactParagraph = styled.div`
