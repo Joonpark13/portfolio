@@ -19,7 +19,7 @@ export default function ContactPage() {
         </ContactParagraph>
 
         <div id="sm" className="icons">
-          <IconButton navigateTo="mailto:contact@joonpark.me">
+          <IconButton navigateTo="mailto:joon@joonpark.com">
             <span className="fa fa-envelope"></span>
           </IconButton>
           <IconButton navigateTo="https://www.linkedin.com/in/joonpark13/">
